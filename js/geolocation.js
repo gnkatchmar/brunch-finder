@@ -138,6 +138,14 @@ function zoomTo(quadArr){
     } else if(quadArr.length === 1){
         // log.g("opt1");
         options = mapOptions[quadArr[0]];
+        // if 5 boxes checked
+    } else if(quadArr.length === 5){
+        // log.g("opt2");
+        options = mapOptions.cityCenter;
+        // if 4 boxes checked
+    } else if(quadArr.length === 4){
+        // log.g("opt2");
+        options = mapOptions.cityCenter;
     // if 3 boxes checked
     } else if(quadArr.length === 3){
         // log.g("opt2");
