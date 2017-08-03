@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Portland Weekend Brunch Finder</title>
+    <meta name="viewport" content="initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav id="nav_main">
+            <h1 id="site-title" class="btn_nav">Weekend Brunch Finder</h1>
+            <ul>
+                <li id="nav-search" class="btn_nav">Search</li>
+                <li id="nav-review" class="btn_nav">Review</li>
+            </ul>
+            <div id="container_btns_secondary">
+                <div id="btn_refresh" class="btns_secondary btn_nav">Next3</div>
+                <div id="btn_nearBy" class="btns_secondary btn_nav">Nearby</div>
+            </div>
+      </nav>
+    </header>
+    <section id="launchpage">
+        <h1>Three Random Suggestions</h1>
+        <div id="imgWrapper">
+          <div id="launchpageimages">
+            <article id="pic1" class="feature-frame invisible"></article>
+            <article id="pic2" class="feature-frame invisible"></article>
+            <article id="pic3" class="feature-frame invisible"></article>
+          </div>
+        </div>
+        <footer>by  
+            <a href="https://github.com/djado">Jade Dhabolt</a> - 
+            <a href="https://github.com/gnkatchmar">Greg Katchmar</a> - 
+            <a href="https://github.com/jjj430">Rosemary Joe<a> - 
+            <a href="https://github.com/NathanPickard">Nathan Pickard<a> - 
+            <a href="https://github.com/ccruz07">Cheryl Cruz<a> - 
+            (restaurant data last updated 8/1/2017)</footer>
+    </section>
+<!-- PAGE BOUNDARY -->
+    <section id="searchpage" class="none">
+            <div id="map"></div>
+            <div>
+            <div id="timeandlocation">
+                <h3 id="timeandlocationheader"> Select location and time</h3>
+                <br>
+                <form name="nhoodselect" onsubmit = "test(nh1, nh2, nh3); return false">
+                    <input type="checkbox" name="nh1" data-quad="SE" value="SEPDX" id="cb0" checked> SE Portland<br>
+                    <input type="checkbox" name="nh2" data-quad="NE" value="NEPDX" id="cb1" checked> N/NE Portland<br>
+                    <input type="checkbox" name="nh3" data-quad="SW" value="DTPDX" id="cb2" checked> NW/SW Portland<br>
+                </form>
+                <br>
+                <div id="timeselect">
+                    <form name="timeselect">
+                        <select id="dropdown">
+                            <option value="0">6:00 AM</option>
+                            <option value="1">6:30 AM</option>
+                            <option value="2">7:00 AM</option>
+                            <option value="3">7:30 AM</option>
+                            <option value="4">8:00 AM</option>
+                            <option value="5">8:30 AM</option>
+                            <option value="6">9:00 AM</option>
+                            <option value="7">9:30 AM</option>
+                            <option value="8">10:00 AM</option>
+                            <option value="9">10:30 AM</option>
+                            <option value="10">11:00 AM</option>
+                            <option value="11">11:30 AM</option>
+                            <option value="12">12:00 PM</option>
+                            <option value="13" selected="selected">Select Your Brunch Time</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+			<section id="container_table">
+			    <table id="restaurantListTable"></table>
+			</section>
+    </section>
+<!-- PAGE BOUNDARY -->
+    <section id="reviews" class="none">
+        <img id="background" src="img/portlandia-brunch.jpg" />
+        <div id="container_reviews">
+            <h2 id="reviews-header">Your Reviews</h2>
+            <a name="reviewsPage"></a>
+            <div id="restselect">
+                <form name="restselect">
+                      <select id="restdropdown">
+                        <option value="0">Accanto</option>
+                        <option value="1">Ankeny Tap & Table</option>
+                        <option value="2">Arleta Library Bakery Cafe</option>
+                        <option value="3">Autentica</option>
+                        <option value="4">Bad Habit Room</option>
+                        <option value="5">Bare Bones Café</option>
+                        <option value="6">Batter Griddle & Drinkery</option>
+                        <option value="7">Beeswing</option>
+                        <option value="8">Bertie Lou's</option>
+                        <option value="9">Bijou Cafe</option>
+                        <option value="10">Bluehour</option>
+                        <option value="11">Bomber Restaurant</option>
+                        <option value="12">Bottle + Kitchen</option>
+                        <option value="13">Bread & Honey Cafe</option>
+                        <option value="14">Bread and Ink Café</option>
+                        <option value="15">Bridge City Taproom</option>
+                        <option value="16">Bridges Café</option>
+                        <option value="17">Brix Tavern</option>
+                        <option value="18">Broder Nord</option>
+                        <option value="19">Brunch Box</option>
+                        <option value="20">Buckman Public House</option>
+                        <option value="21">Bunk Bar Water</option>
+                        <option value="22">Bunk Bar Wonder</option>
+                        <option value="23">C Bar</option>
+                        <option value="24">Cadillac Café</option>
+                        <option value="25">Café Broder</option>
+                        <option value="26">Cameo Café</option>
+                        <option value="27">Casa Vaca Taqueria</option>
+                        <option value="28">Cheese & Crack Shop</option>
+                        <option value="29">Cheryl's on 12th</option>
+                        <option value="30">Chez Machin</option>
+                        <option value="31">Cibo</option>
+                        <option value="32">Circa 33</option>
+                        <option value="33">City State Diner</option>
+                        <option value="34">Coquine</option>
+                        <option value="35">Costello’s Travel Caffé</option>
+                        <option value="36">Country Cat</option>
+                        <option value="37">Cricket Café</option>
+                        <option value="38">Cup & Saucer Café</option>
+                        <option value="39">Daily Feast</option>
+                        <option value="40">Delta Café</option>
+                        <option value="41">Dot's</option>
+                        <option value="42">Doug Fir</option>
+                        <option value="43">EastBurn</option>
+                        <option value="44">Eisenhower Bagel House</option>
+                        <option value="45">Expatriate</option>
+                        <option value="46">Ford Food  & Drink</option>
+                        <option value="47">Fuller's Coffee Shop</option>
+                        <option value="48">Genie's Café</option>
+                        <option value="49">Genie's Too</option>
+                        <option value="50">Gracie's Restaurant</option>
+                        <option value="51">Gravy</option>
+                        <option value="52">Guilder</option>
+                        <option value="53">Ha VL</option>
+                        <option value="54">Hale Pele</option>
+                        <option value="55">Harlow</option>
+                        <option value="56">Hawthorne Hophouse</option>
+                        <option value="57">Hazel Room</option>
+                        <option value="58">Headwaters</option>
+                        <option value="59">Helser's on Alberta</option>
+                        <option value="60">HK Café</option>
+                        <option value="61">Hobnob Grill</option>
+                        <option value="62">Holman's</option>
+                        <option value="63">Hour Glass Pub & Eatery</option>
+                        <option value="64">HunnyMilk</option>
+                        <option value="65">Iconic Lounge</option>
+                        <option value="66">Imperial</option>
+                        <option value="67">Interurban</option>
+                        <option value="68">J &M Cafe</option>
+                        <option value="69">Jackrabbit</option>
+                        <option value="70">Jacqueline</option>
+                        <option value="71">Jam on Hawthorne</option>
+                        <option value="72">Junior's Café</option>
+                        <option value="73">Kelly's Olympian</option>
+                        <option value="74">Kornblatt's</option>
+                        <option value="75">La Calaca Comelona</option>
+                        <option value="76">La Panza Café</option>
+                        <option value="77">Lamp</option>
+                        <option value="78">Laurelhurst Café</option>
+                        <option value="79">Lauretta Jean's</option>
+                        <option value="80">Le Bistro Montage</option>
+                        <option value="81">Leaky Roof Gastro Pub</option>
+                        <option value="82">Little T American Baker</option>
+                        <option value="83">Mad Sons Pub</option>
+                        <option value="84">Mehri's Bakery and Cafe</option>
+                        <option value="85">Midpoint Food & Drink</option>
+                        <option value="86">Milk glass Mrkt </option>
+                        <option value="87">Milo's City Café</option>
+                        <option value="88">MIss Delta</option>
+                        <option value="89">Mother's Bistro & Bar</option>
+                        <option value="90">Muscadine</option>
+                        <option value="91">My Father's Place</option>
+                        <option value="92">Navarre</option>
+                        <option value="93">NEPO 42</option>
+                        <option value="94">New Deal Cafe</option>
+                        <option value="95">Night Light Lounge</option>
+                        <option value="96">Nite Hawk Cafe & Lounge</option>
+                        <option value="97">Observatory</option>
+                        <option value="98">Off the Waffle</option>
+                        <option value="99">Oliver's Cafe</option>
+                        <option value="100">Olympic Provisions</option>
+                        <option value="101">Original Dinerant</option>
+                        <option value="102">Original Hotcake House</option>
+                        <option value="103">Original Pancake House</option>
+                        <option value="104">Overlook Restaurant</option>
+                        <option value="105">P's and Q's</option>
+                        <option value="106">Pambiche</option>
+                        <option value="107">Paradox Café</option>
+                        <option value="108">Pearl Tavern</option>
+                        <option value="109">Pepper Box</option>
+                        <option value="110">Petisco</option>
+                        <option value="111">Petite Provence (NE)</option>
+                        <option value="112">Petite Provence (SE)</option>
+                        <option value="113">Pho Corner</option>
+                        <option value="114">Pig 'N Pancake</option>
+                        <option value="115">Pine Street Biscuits (NE Alberta)</option>
+                        <option value="116">Pine Street Biscuits (NE Schuyler)</option>
+                        <option value="117">Pine Street Biscuits (SE)</option>
+                        <option value="118">Podnah's Pit</option>
+                        <option value="119">Portland Sweet Jam</option>
+                        <option value="120">Prescott Cafe</option>
+                        <option value="121">Produce Row Cafe</option>
+                        <option value="122">Proud Mary Coffee</option>
+                        <option value="123">Punch Bowl Social</option>
+                        <option value="124">Pure Spice</option>
+                        <option value="125">Q Restaurant and Bar</option>
+                        <option value="126">Radar</option>
+                        <option value="127">Rain or Shine Coffeehouse</option>
+                        <option value="128">Red Square Café</option>
+                        <option value="129">Redwood</option>
+                        <option value="130">Ringside Grill</option>
+                        <option value="131">Rocking Frog Café</option>
+                        <option value="132">Roman Candle</option>
+                        <option value="133">Roost</option>
+                        <option value="134">Roxy</option>
+                        <option value="135">Sanborns</option>
+                        <option value="136">Sandy Hut</option>
+                        <option value="137">Sckavone's</option>
+                        <option value="138">Screen Door</option>
+                        <option value="139">Side Door</option>
+                        <option value="140">Slappy Cakes</option>
+                        <option value="141">Slide Inn</option>
+                        <option value="142">Smokehouse Tavern</option>
+                        <option value="143">Spielman Coffee Roaster & Bagels (NE)</option>
+                        <option value="144">Spielman Coffee Roaster & Bagels (SE)</option>
+                        <option value="145">Spitz</option>
+                        <option value="146">St. Honore Bakery (NW)</option>
+                        <option value="147">St. Honore Bakery (SE)</option>
+                        <option value="148">St. Honore Bakery (SW)</option>
+                        <option value="149">Suzette</option>
+                        <option value="150">Sweedeedee</option>
+                        <option value="151">Tabor Bread</option>
+                        <option value="152">Tabor Tavern</option>
+                        <option value="153">Taco Pedaler</option>
+                        <option value="154">Tamale Boy</option>
+                        <option value="155">Tannery Bar</option>
+                        <option value="156">Tapalaya</option>
+                        <option value="157">Tasty n Alder</option>
+                        <option value="158">Tasty n Sons</option>
+                        <option value="159">Tik Tok Restaurant & Bar (SE 82nd)</option>
+                        <option value="160">Tik Tok Restaurant & Bar(SE Division)</option>
+                        <option value="161">Tin Shed Garden Cafe</option>
+                        <option value="162">Toast</option>
+                        <option value="163">Tom's Restaurant</option>
+                        <option value="164">Trinket</option>
+                        <option value="165">Tusk</option>
+                        <option value="166">Verdigris</option>
+                        <option value="167">Vivienne Kitchen & Pantry</option>
+                        <option value="168">Waffle Window</option>
+                        <option value="169">Wares</option>
+                        <option value="170">Wild Abandon</option>
+                        <option value="171">Woodsman Tavern</option>
+                        <option value="172">Ya Hala</option>
+                        <option value="173">Zell's Café</option>
+                      </select>
+                </form>
+                <br>
+                <form name = "votes" id="votes" onsubmit = "reviewPage(vote); return false">
+                    <input type="radio" name="vote" value="recommend"> Recommend<br>
+                    <input type="radio" name="vote" value="notrecommend"> Don't Recommend<br>
+                    <br>
+                    <p>How was your brunch here?</p>
+                    <textarea rows="5" cols="50" id="reviewtext"></textarea>
+                    <input type="submit" value="Submit Review">
+                </form>
+          </div>
+            <br>
+          <div id="review-content"></div>
+      </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/geolocation.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBq1Y5bKRkQOUNQTtD0u286HJZGEJ32oLw&libraries=places&callback=initMap" async defer></script>
+<script type="text/javascript" src="js/googlePlaces.js"></script>
+</html>
