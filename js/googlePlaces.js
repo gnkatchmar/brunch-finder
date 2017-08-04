@@ -165,26 +165,3 @@ function replaceClass(id, oldClass, newClass){
 document.getElementById('pic1').addEventListener('click', function(e){
     visPage('searchpage');
 });
-
-// TEST CODE ----------------------------------------------------------------
-
-// function testPhoto(n){
-//     var pId = brunchArr[n].pId;
-//     log.p("Testing photo of " + brunchArr[n].title);
-//     var request = {
-//         placeId: pId
-//     };
-//     if(!service){
-//         service = new google.maps.places.PlacesService(mapObj);
-//     }
-//     service.getDetails(request, testCallback);
-// }
-
-// // Fill the photUrls arrays
-// function testCallback(place, status){
-//     if (status == google.maps.places.PlacesServiceStatus.OK){
-//         var photos = place.photos;
-//         var url = photos[0].getUrl({'maxWidth':150, 'maxHeight':150});
-//         document.getElementById('container_googlePhotos').innerHTML = "<img src='" + url + "'>";
-//     }
-// }
