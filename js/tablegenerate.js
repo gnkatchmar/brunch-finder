@@ -1,10 +1,10 @@
 //Table generation
 document.getElementById("dropdown").addEventListener("change", getIndex);
 document.getElementById("cb0").addEventListener("onchange", getIndex);
-document.getElementById("cb0").addEventListener("onchange", getIndex);
-document.getElementById("cb0").addEventListener("onchange", getIndex);
-document.getElementById("cb0").addEventListener("onchange", getIndex);
-document.getElementById("cb0").addEventListener("onchange", getIndex);
+document.getElementById("cb1").addEventListener("onchange", getIndex);
+document.getElementById("cb2").addEventListener("onchange", getIndex);
+document.getElementById("cb3").addEventListener("onchange", getIndex);
+document.getElementById("cb4").addEventListener("onchange", getIndex);
 
 // table generation
 function addInfo(currentRestaurant){
@@ -13,10 +13,6 @@ function addInfo(currentRestaurant){
     var nameCell = document.createElement("td");
     nameCell.innerText = currentRestaurant.title;
     locationRow.appendChild(nameCell);
-
-    //var opentimeCell = document.createElement("td");
-    //opentimeCell.innerText = this.opentime;
-    //locationRow.appendChild(opentimeCell);
 
     var addressCell = document.createElement("td");
     addressCell.innerText = currentRestaurant.address;

@@ -38,26 +38,6 @@ var mapOptions = {
         coords: {lat: 45.53, lng: -122.7},
         zoom: 14
     },
-    NESW: {
-        coords: {lat: 45.535, lng: -122.676678},
-        zoom: 13
-    },
-    EASTSIDE: {
-        coords: {lat: 45.519922, lng: -122.590758},
-        zoom: 13
-    },
-    SOUTHSIDE: {
-        coords: {lat: 45.505, lng: -122.66},
-        zoom: 12
-    }
-};
-
-// utility function
-var log = function(t){
-    console.log(t);
-};
-log.g = function(t){
-    // log(t);
 };
 
 // Utility function
@@ -135,34 +115,16 @@ function visByCheckbox(){
 }
 
 function zoomTo(quadArr){
-    log.g("Zooming to: " + quadArr);
     var options;
 
-    if(quadArr.length === 0){
-        options = mapOptions.cityCenter;
-        // if 1 box is checked
-    } else if(quadArr.length === 1){
-        // log.g("opt1");
+    if(quadArr.length === 1){
         options = mapOptions[quadArr[0]];
-    // if 3 boxes checked
-    } else if(quadArr.length === 3){
-        // log.g("opt2");
+    } else {
         options = mapOptions.cityCenter;
-    // if 2 boxes checked
-    } else if(quadArr.indexOf('NE') !== -1 && quadArr.indexOf('SW') !== -1){
-        // log.g("opt3");
-        options = mapOptions.NESW;
-    } else if(quadArr.indexOf('NE') !== -1 && quadArr.indexOf('SE') !== -1){
-        // log.g("opt4");
-        options = mapOptions.EASTSIDE;
-    } else if(quadArr.indexOf('SE') !== -1 && quadArr.indexOf('SW') !== -1){
-        // log.g("opt5");
-        options = mapOptions.SOUTHSIDE;
     }
 
     mapObj.panTo(options.coords);
     mapObj.setZoom(options.zoom);
-    // google.maps.event.trigger(mapObj, 'resize');
 }
 
 function initMap() {
@@ -199,24 +161,18 @@ function enable_geoloc(){
           lng: position.coords.longitude
         };
 
-
-
-        // log.g("Current Lat, Lng: " + pos.lat + ", " + pos.lng);
         infoWindow.setPosition(pos);//center view on user location
         infoWindow.setContent('Location found.');
         mapObj.setCenter(pos);
-        // infoWindow.open(mapObj);//shows location. Not necessarily accurate
 
         // get current user location quadrant
         userQuad = getQuadrant();
-        log.g("Current user location: " + userQuad);
 
         // reload featured photos to show nearby options
         getPlacePhotos();
 
         // check box matching user's geolocation
         for(var i=0; i<checkboxes_geo.length; i++){
-            // log.g("Quad checkbox: " + checkboxes_geo[i].dataset.quad);
 
             if(checkboxes_geo[i].dataset.quad === userQuad){
                 checkboxes_geo[i].checked = true;
@@ -274,7 +230,6 @@ function getQuadrant(){
 
 function getMarkerObjs(quad){
     var quadMarkerArr;
-    // log.g("Fetching quad: " + quad );
     switch(quad){
         case 'N':
             quadMarkerArr = markerArr_N;
@@ -327,13 +282,10 @@ function convertAllToMarkers(){
 
 // Sets the map on all markers in the array.
  function setMapOnAll(vis, markerArr){
-    // log.g("marker array length: " + markerArr.length);
    for(var i=0; i < markerArr.length; i++) {
        if(vis === 'show'){
            if(selectedTime){
-            //    log.g('selectedTime: ' + selectedTime);
                if(parseInt(markerArr[i].openTime.replace(':', '')) <= selectedTime){
-                //    log.g(parseInt(markerArr[i].openTime.replace(':', '')));
                    markerArr[i].setMap(mapObj);
                } else {
                    markerArr[i].setMap(null);
