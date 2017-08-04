@@ -12,7 +12,7 @@ var markerArr_SW = [];
 var markerArr_NW = [];
 var selectedTime;
 var infoWindow;
-//"higher" negative lng value means more to the left
+//"higher" negative lng value means center more to the left
 var mapOptions = {
     cityCenter: {
         coords: {lat: 45.525, lng: -122.66},
@@ -23,16 +23,16 @@ var mapOptions = {
         zoom: 13
     },
     NE: {
-        coords: {lat: 45.55, lng: -122.65},
-        zoom: 12
+        coords: {lat: 45.543, lng: -122.62},
+        zoom: 13
     },
     SE: {
-        coords: {lat: 45.5, lng: -122.651998},
-        zoom: 14
+        coords: {lat: 45.515, lng: -122.62},
+        zoom: 13
     },
     SW: {
-        coords: {lat: 45.5, lng: -122.67},
-        zoom: 15
+        coords: {lat: 45.52, lng: -122.679565},
+        zoom: 13
     },
     NW: {
         coords: {lat: 45.53, lng: -122.7},
