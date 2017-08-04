@@ -5,31 +5,37 @@ var userQuad = null;
 var mapObj;
 var checkboxes_geo;
 var brunchMarkerObjs;
+var markerArr_N = [];
 var markerArr_NE = [];
 var markerArr_SE = [];
 var markerArr_SW = [];
 var markerArr_NW = [];
 var selectedTime;
 var infoWindow;
+//"higher" negative lng value means more to the left
 var mapOptions = {
     cityCenter: {
         coords: {lat: 45.525, lng: -122.66},
         zoom: 11
     },
-    NE: {
-        coords: {lat: 45.5438, lng: -122.650560},
+    N: {
+        coords: {lat: 45.558, lng: -122.7},
         zoom: 13
+    },
+    NE: {
+        coords: {lat: 45.55, lng: -122.65},
+        zoom: 12
     },
     SE: {
-        coords: {lat: 45.505, lng: -122.651998},
-        zoom: 13
+        coords: {lat: 45.5, lng: -122.651998},
+        zoom: 14
     },
     SW: {
-        coords: {lat: 45.518964, lng: -122.679481},
+        coords: {lat: 45.5, lng: -122.67},
         zoom: 15
     },
     NW: {
-        coords: {lat: 45.529873, lng: -122.694569},
+        coords: {lat: 45.53, lng: -122.7},
         zoom: 14
     },
     NESW: {
@@ -138,14 +144,6 @@ function zoomTo(quadArr){
     } else if(quadArr.length === 1){
         // log.g("opt1");
         options = mapOptions[quadArr[0]];
-        // if 5 boxes checked
-    } else if(quadArr.length === 5){
-        // log.g("opt2");
-        options = mapOptions.cityCenter;
-        // if 4 boxes checked
-    } else if(quadArr.length === 4){
-        // log.g("opt2");
-        options = mapOptions.cityCenter;
     // if 3 boxes checked
     } else if(quadArr.length === 3){
         // log.g("opt2");
@@ -278,21 +276,21 @@ function getMarkerObjs(quad){
     var quadMarkerArr;
     // log.g("Fetching quad: " + quad );
     switch(quad){
+        case 'N':
+            quadMarkerArr = markerArr_N;
+        break;
         case 'NE':
             quadMarkerArr = markerArr_NE;
         break;
-
+        case 'NW':
+            quadMarkerArr = markerArr_NW;
+        break;
         case 'SE':
             quadMarkerArr = markerArr_SE;
         break;
-
         case 'SW':
             quadMarkerArr = markerArr_SW;
         break;
-        // Currently no brunchtrackers in NW
-        // case 'NW':
-        //     quadMarkerArr = markerArr_NW;
-        // break;
     }
     return quadMarkerArr;
 }
@@ -348,24 +346,3 @@ function convertAllToMarkers(){
        }
    }
  }
-
- // TEST MARKERS
-     // var marker1 = new google.maps.Marker({
-     //     position: {lat: 45.534779, lng: -122.642674},
-     //     map: map,
-     //     title: 'Spielman Coffee Roaster & Bagels'
-     // });
-     //
-     // var marker2 = new google.maps.Marker({
-     //     position: {lat: 45.505019, lng: -122.622889},
-     //     map: map,
-     //     title: "Tom's Resaraunt"
-     // });
- // TEST MARKERS
-
- // function cleanTime(str){
- //     str = str.replace(':','');
- //     str = str.replace(/am|pm/i, '');
- //     str.trim();
- //     return str;
- // }
