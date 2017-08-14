@@ -273,3 +273,21 @@ figcaption a {
 .block {
     display: block;
 }
+
+/*////////Responsiveness////////*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #launchpageimages img{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #launchpageimages img{
+    height: 200px;
+    width: 200px;
+  }
+}
