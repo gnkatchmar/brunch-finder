@@ -279,8 +279,8 @@ figcaption a {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #launchpageimages img{
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
   }
   h1  {
    font-size: 25px
