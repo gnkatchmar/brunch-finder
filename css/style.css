@@ -282,6 +282,13 @@ figcaption a {
     height: 100px;
     width: 100px;
   }
+  h1  {
+   font-size: 25px
+  }
+  .feature-frame {
+    padding: 5px 5px;
+    margin: 5px;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
