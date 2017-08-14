@@ -292,7 +292,10 @@ figcaption a {
   .f-title {
   font-size: 12px;
   font-weight: bold;
-}
+  }
+  .f-time {
+  font-size: 10px;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
