@@ -1,6 +1,6 @@
 /*////////Base Styles////////*/
 * {
-   margin: 0px;
+   margin: 2px;
    padding: 0px;
 }
 
@@ -277,32 +277,37 @@ figcaption a {
 
 /*////////Responsiveness////////*/
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Smartphones (portrait) ----------- */
+@media screen 
+and (device-width: 320px) 
+and (device-height: 640px) 
+{
+
   #launchpageimages img{
     height: 90px;
     width: 90px;
   }
+
   h1  {
-   font-size: 25px
+   font-size: 16px;
   }
+
+  nav #site-title {
+    font-size: 17px;
+  }
+
   .feature-frame {
     padding: 5px 5px;
     margin: 5px;
   }
+
   .f-title {
   font-size: 12px;
   font-weight: bold;
   }
+
   .f-time {
   font-size: 10px;
   }
-}
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  #launchpageimages img{
-    height: 200px;
-    width: 200px;
-  }
 }
