@@ -278,11 +278,7 @@ figcaption a {
 /*////////Responsiveness////////*/
 
 /* Smartphones (portrait) ----------- */
-@media screen 
-and (device-width: 320px) 
-and (device-height: 640px) 
-{
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #launchpageimages img{
     height: 90px;
     width: 90px;
@@ -309,5 +305,4 @@ and (device-height: 640px)
   .f-time {
   font-size: 10px;
   }
-
 }
