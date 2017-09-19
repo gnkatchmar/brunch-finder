@@ -11,7 +11,7 @@ html, body {
 h1  {
   font-family: 'Courgette', cursive;
   text-align: center;
-  font-size: 50px
+  font-size: 50px;
 }
 
 form {
@@ -88,25 +88,26 @@ nav li hover:not(.active) {
 }
 
 /*////////Btns Secondary////////*/
-#wrapper_btns_secondary {
+/* #wrapper_btns_secondary {
   height: 25px;
-}
+} */
 
 #container_btns_secondary {
-    display: inline;
-    margin: auto;
-    margin-right: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 10px;
 }
 
 .btns_secondary {
-    height: 25px;
-    width: 100px;
-    line-height: 25px;
-    color: white;
+    width: 250px;
+    color: black;
     text-align: center;
     display: inline-block;
-    border-radius: 3px;
-    border: 1px solid white;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 3px;
+    margin: auto;
 }
 
 .btn_nav {
@@ -118,14 +119,14 @@ nav li hover:not(.active) {
   font-family: 'Raleway' , sans-serif;
   z-index: 5;
   width: 100%;
-  margin-top: 75px;
+  margin-top: 25px;
   background-color: #f0f0f0;
 }
 
 #imgWrapper {
     height: 440px;
     border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
 }
 
 #launchpageimages {
