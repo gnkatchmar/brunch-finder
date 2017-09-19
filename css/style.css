@@ -124,7 +124,7 @@ nav li hover:not(.active) {
 }
 
 #imgWrapper {
-    height: 440px;
+    /* height: 440px; */
     border-top: 1px solid lightgray;
     /* border-bottom: 1px solid lightgray; */
 }
