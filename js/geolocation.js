@@ -264,7 +264,7 @@ function convertAllToMarkers(){
             title: brunchArr[i].title,
             openTime: brunchArr[i].opentime
         });
-        markerObj.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+        markerObj.setIcon('https://maps.google.com/mapfiles/ms/icons/blue-dot.png');
         markerObj.setAnimation(google.maps.Animation.DROP);
         // this array is returned
         arr.push(markerObj);
