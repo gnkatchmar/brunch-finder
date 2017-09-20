@@ -24,13 +24,11 @@ function visPage(pageId){
         case 'launchpage':
             display('launchpage', 1);
             display('searchpage', 0);
-            display('reviews', 0);
         break;
 
         case 'searchpage':
             display('launchpage', 0);
             display('searchpage', 1);
-            display('reviews', 0);
             // refresh map
             google.maps.event.trigger(mapObj, 'resize');
             if(geo_enabled){
@@ -40,18 +38,6 @@ function visPage(pageId){
             }
         break;
 
-        case 'reviews':
-            display('launchpage', 0);
-            display('searchpage', 0);
-            display('reviews', 1);
-            reviewOutput();
-            // unhide reviews if they exist
-            if(document.getElementById('review-content').innerHTML){
-                display('review-content', 1);
-            } else {
-                display('review-content', 0);
-            }
-        break;
     }
     if(pageId === 'launchpage'){
         vis('container_btns_secondary', 1);
@@ -62,7 +48,6 @@ function visPage(pageId){
 
 // add nav event system
 document.getElementById('nav_main').addEventListener('click', function(e){
-    // log(e.target.id);
     switch(e.target.id.toLowerCase()){
         case "site-title":
             visPage('launchpage');
@@ -70,10 +55,6 @@ document.getElementById('nav_main').addEventListener('click', function(e){
 
         case "nav-search":
             visPage('searchpage');
-        break;
-
-        case "nav-review":
-            visPage('reviews');
         break;
     }
 });
