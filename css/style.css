@@ -1,6 +1,6 @@
 /*////////Base Styles////////*/
 * {
-   margin: 2px;
+   margin: 2px 0px;
    padding: 0px;
 }
 
@@ -37,13 +37,13 @@ footer {
 
 /*////////Header + Nav////////*/
 header {
-  height: 50px;
+  height: 35px;
   display: block;
 }
 
 #site-title {
   border: 2px solid white;
-  padding: 5px 10px 0;
+  padding: 5px;
   margin: 5px;
 }
 
@@ -183,6 +183,7 @@ figcaption a {
 }
 
 #map {
+    margin-top: 30px;
     height: 350px;
     width: 100%;
 }
@@ -193,7 +194,7 @@ figcaption a {
 }
 
 #timeandlocation {
-  margin: 20px;
+  margin: 5px 20px;
   padding: 10px;
   display: inline-block;
   background-color: lightblue;
