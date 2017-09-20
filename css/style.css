@@ -237,42 +237,6 @@ figcaption a {
 
 /*////////Responsiveness////////*/
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-device-width : 321px) {
-  
-    h1  {
-     font-size: 16px;
-    }
-  
-    footer {
-      font-size: smaller;
-    }
-  
-    .feature-frame {
-      padding: 5px 5px;
-      margin: 5px;
-    }
-  
-    .f-title {
-    font-size: 12px;
-    font-weight: bold;
-    }
-  
-    .f-time {
-    font-size: 10px;
-    }
-    
-    nav #site-title {
-      font-size: 17px;
-    }
-  
-    #launchpageimages img{
-      height: 130px;
-      width: 130px;
-    }
-  
-  }
-
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
@@ -309,3 +273,38 @@ figcaption a {
 
 }
 
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+  
+    h1  {
+     font-size: 16px;
+    }
+  
+    footer {
+      font-size: smaller;
+    }
+  
+    .feature-frame {
+      padding: 5px 5px;
+      margin: 5px;
+    }
+  
+    .f-title {
+    font-size: 12px;
+    font-weight: bold;
+    }
+  
+    .f-time {
+    font-size: 10px;
+    }
+    
+    nav #site-title {
+      font-size: 17px;
+    }
+  
+    #launchpageimages img{
+      height: 130px;
+      width: 130px;
+    }
+  
+  }
