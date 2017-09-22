@@ -1,3 +1,4 @@
+/*////////Mobile-First Smartphone Portrait////////*/
 /*////////Base Styles////////*/
 * {
    margin: 2px 0px;
@@ -11,7 +12,7 @@ html, body {
 h1  {
   font-family: 'Courgette', cursive;
   text-align: center;
-  font-size: 50px;
+  font-size: 16px;
 }
 
 form {
@@ -32,6 +33,7 @@ ul {
 }
 
 footer {
+  font-size: smaller;
   text-align: center;
 }
 
@@ -60,7 +62,7 @@ nav {
 }
 
 nav #site-title {
-  font-size: 25px;
+  font-size: 17px;
 }
 
 nav ul {
@@ -71,7 +73,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 15px 20px 0px 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 nav li:hover{
@@ -134,8 +136,8 @@ nav li hover:not(.active) {
 #launchpageimages img{
   display: block;
   object-fit: cover;
-  height: 300px;
-  width: 300px;
+  height: 90px;
+  width: 90px;
 }
 
 #launchpageimages figure{
@@ -149,8 +151,8 @@ nav li hover:not(.active) {
 .feature-frame {
     color: #7E7E7E;
     background-color: #FFF;
-    padding: 15px 5px;
-    margin: 20px;
+    padding: 5px 5px;
+    margin: 5px;
     box-shadow: 0px 1px 2px gray;
 }
 
@@ -164,13 +166,17 @@ figcaption {
 }
 
 .f-title {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 figcaption a {
   text-decoration: none;
   color: orange;
+}
+
+.f-time {
+  font-size: 10px;
 }
 
 /*////////Search Page Styles////////*/
@@ -232,83 +238,51 @@ figcaption a {
 }
 
 /*////////Responsiveness////////*/
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-  h1  {
-   font-size: 16px;
-  }
-
-  footer {
-    font-size: smaller;
-  }
-
-  .feature-frame {
-    padding: 5px 5px;
-    margin: 5px;
-  }
-
-  .f-title {
-  font-size: 12px;
-  font-weight: bold;
-  }
-
-  .f-time {
-  font-size: 10px;
-  }
-  
-  nav #site-title {
-    font-size: 17px;
-  }
-
-  nav ul li {
-    padding: 10px 0px 0px 0px;
-  }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) { 
 
   #launchpageimages img{
-    height: 90px;
-    width: 90px;
+    height: 135px;
+    width: 135px;
   }
 
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-  
-    h1  {
-     font-size: 16px;
-    }
-  
-    footer {
-      font-size: smaller;
-    }
-  
-    .feature-frame {
-      padding: 5px 5px;
-      margin: 5px;
-    }
-  
-    .f-title {
-    font-size: 12px;
-    font-weight: bold;
-    }
-  
-    .f-time {
-    font-size: 10px;
-    }
-    
-    nav #site-title {
-      font-size: 17px;
-    }
+/*Laptops and larger*/
+@media only screen and (min-device-width : 1008px) {
 
-    nav ul li {
-      padding: 10px 0px 0px 0px;
-    }
-  
-    #launchpageimages img{
-      height: 135px;
-      width: 135px;
-    }
-  
+  h1  {
+    font-size: 50px;
   }
+
+  footer {
+    font-size: inherit;
+  }
+    
+  nav #site-title {
+    font-size: 25px;
+  }
+
+  nav ul li {
+    padding: 15px 20px 0px 0px;
+  }
+
+  #launchpageimages img{
+    height: 300px;
+    width: 300px;
+  }
+
+  .feature-frame {
+    padding: 15px 5px;
+    margin: 20px;
+  }
+
+  .f-title {
+    font-size: 20px;
+  }
+
+  .f-time {
+    font-size: 12px;
+  }
+
+}
