@@ -136,8 +136,8 @@ nav li hover:not(.active) {
 #launchpageimages img{
   display: block;
   object-fit: cover;
-  height: 90px;
-  width: 90px;
+  height: 88px;
+  width: 88px;
 }
 
 #launchpageimages figure{
@@ -242,8 +242,8 @@ figcaption a {
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) { 
 
   #launchpageimages img{
-    height: 135px;
-    width: 135px;
+    height: 137px;
+    width: 137px;
   }
 
 }
