@@ -248,6 +248,43 @@ figcaption a {
 
 }
 
+/* Tablets ----------- */
+@media only screen and (min-device-width : 761px) and (max-device-width : 1080px) { 
+  
+  h1  {
+    font-size: 50px;
+  }
+
+  footer {
+    font-size: inherit;
+  }
+    
+  nav #site-title {
+    font-size: 25px;
+  }
+
+  nav ul li {
+    padding: 15px 20px 0px 0px;
+  }
+
+  #launchpageimages img{
+    height: 210px;
+    width: 210px;
+  }
+
+  .feature-frame {
+    padding: 15px 5px;
+    margin: 20px;
+  }
+
+  .f-title {
+    font-size: 15px;
+  }
+
+  .f-time {
+    font-size: 12px;
+  }
+
 /*Laptops and larger*/
 @media only screen and (min-device-width : 1008px) {
 
