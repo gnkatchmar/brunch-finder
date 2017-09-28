@@ -285,8 +285,10 @@ figcaption a {
     font-size: 12px;
   }
 
+}
+
 /*Laptops and larger*/
-@media only screen and (min-device-width : 1008px) {
+@media only screen and (min-device-width : 1080px) {
 
   h1  {
     font-size: 50px;
