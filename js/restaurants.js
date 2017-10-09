@@ -18,6 +18,7 @@ class brunchtracker {
 //change https to http
 var brunchArr = [
   new brunchtracker("Accanto", "2838 SE Belmont", "SE", "10:00 AM", "http://accantopdx.com", 45.516269, -122.636227, 'ChIJuew0jZaglVQRsDcgdKVrMd4'),
+  new brunchtracker("Alderman's Tavern", "71 SW 2nd", "SW", "9:00 AM", "http://www.aldermanspdx.com", 45.522244, -122.672443, 'ChIJfV1zGQcKlVQR5mtyBr11tYk'),
   new brunchtracker("Alto Bajo", "310 SW Stark", "SW", "7:00 AM", "http://altobajopdx.com", 45.520247, -122.674767, 'ChIJlV-0gQYKlVQRdy1bfiZqCKY'),
   new brunchtracker("Andina", "1314 NW Glisan", "NW", "11:00 AM", "http://www.andinarestaurant.com", 45.526328, -122.684578, 'ChIJ1bXhuPgJlVQRD9JEUHsIBis'),
   new brunchtracker("Ankeny Tap & Table", "2724 SE Ankeny", "SE", "10:00 AM", "http://www.ankenypdx.com/#welcome", 45.521993, -122.637737, 'ChIJ533W-b6glVQR8x4Mn-RWP90'),
@@ -161,7 +162,8 @@ var brunchArr = [
   "http://www.pinestatebiscuits.com/", 45.504642, -122.654428, 'ChIJ_zaOyE2nlVQRyxjf2Q4wBd8'),
   new brunchtracker("Po'Shines Cafe De La Soul (closed Sundays)", "8139 N Denver", "N", "8:00 AM", "http://poshines.com", 45.582270, -122.687308, 'ChIJ73GA1LCnlVQRSV0fPI8oV7U'),
   new brunchtracker("Podnah's Pit", "1625 NE Killingsworth", "NE", "9:00 AM", "http://www.podnahspit.com", 45.562895, -122.648279, 'ChIJPcNnRyKnlVQRYa0xFWzfQcI'),
-  new brunchtracker("Portland Sweet Jam", "8775 SW Canyon Ln", "SW", "8:00 AM", "http://www.portlandsweetjam.com", 45.499035, -122.767174, 'ChIJq_Z4Zv0LlVQRfkSaxE7L2ss'),
+  new brunchtracker("Portland Sweet Jam (NE)", "5237 NE MLK", "NE", "8:00 AM", "http://www.portlandsweetjam.com/pages/location-mlk.html", 45.561207, -122.661907, 'ChIJSZwpXhqnlVQRxZTQ9PNiO1c'),
+  new brunchtracker("Portland Sweet Jam (SW)", "8775 SW Canyon Ln", "SW", "8:00 AM", "http://www.portlandsweetjam.com/pages/location-beaverton.html", 45.499035, -122.767174, 'ChIJq_Z4Zv0LlVQRfkSaxE7L2ss'),
   new brunchtracker("Prescott Cafe", "6205 NE Prescott", "NE", "7:00 AM", "http://www.yelp.com/biz/prescott-cafe-portland", 45.555564, -122.599051, 'ChIJVZzypbWmlVQR55LKFD2FyL8'),
   new brunchtracker("Produce Row Cafe", "204 SE Oak", "SE", "10:00 AM", "http://www.producerowcafe.com/brunch/", 45.519952, -122.663557, 'ChIJ2d5YlaeglVQR1X4QBMB5WPg'),
   new brunchtracker("Proud Mary Coffee", "2012 NE Alberta", "NE", "8:00 AM", "http://proudmarycoffee.com", 45.558857, -122.644434, 'ChIJC4lfHCCnlVQRcplEgf2qbfA'),
@@ -194,6 +196,7 @@ var brunchArr = [
   new brunchtracker("St. Honore Bakery (NW)", "2335 NW Thurman", "NW", "6:30 AM", "http://www.sainthonorebakery.com", 45.535636, -122.699668, 'ChIJHfDB0uUJlVQRiPSOjZY3qZQ'),
   new brunchtracker("St. Honore Bakery (SE)", "3333 SE Division", "SE", "7:00 AM", "http://www.sainthonorebakery.com", 45.504943, -122.630794, 'ChIJsw68bYaglVQR18drjIMwens'),
   new brunchtracker("St. Honore Bakery (SW)", "501 SW Broadway", "SW", "6:30 AM", "http://www.sainthonorebakery.com", 45.520596, -122.679153, 'ChIJSx8YZgQKlVQRXiMuMexDMpw'),
+  new brunchtracker("Stacked Sandwich Shop (closed Sundays)", "1615 SE 3rd", "SE", "10:00 AM", "http://stackedsandwichshop.com", 45.511350, -122.663165, 'ChIJnaQcUwsKlVQRd4m5d5C_ZmQ'),
   new brunchtracker("Stepping Stone Cafe", "2390 NW Quimby", "NW", "7:30 AM", "http://www.steppingstonecafe.com/", 45.533243, -122.700455, 'ChIJPcHCgeUJlVQRda_zTqGXuOU'),
   new brunchtracker("Sunny's Diner", "9993 SE 82nd", "SE", "7:00 AM", "http://www.sunnysdinernw.com", 45.450947, -122.579389, 'ChIJe3tWymF1lVQR4MTMT6ry9Co'),
   new brunchtracker("Suzette", "3342 SE Belmont", "SE", "9:00 AM", "http://www.suzettepdx.com/", 45.516313, -122.630009, 'ChIJeffdiN6mlVQRqnfounJeDhY'),
