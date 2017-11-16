@@ -9,14 +9,12 @@ class brunchtracker {
         this.lat = lat;
         this.lng = lng;
         this.pId = placeId;
-        this.upvotes = 0;
-        this.downvotes = 0;
-        this.restcomment = "";
     }
 }
 
 //change https to http
 var brunchArr = [
+  new brunchtracker("82nd Street Bar and Grill", "5028 SE 82nd", "SE", "9:00 AM", "http://www.yelp.com/biz/82nd-street-bar-and-grill-portland", 45.486097, -122.578478, 'ChIJA8DisDyglVQR6lZdBZjs2wQ'),
   new brunchtracker("Accanto", "2838 SE Belmont", "SE", "10:00 AM", "http://accantopdx.com", 45.516269, -122.636227, 'ChIJuew0jZaglVQRsDcgdKVrMd4'),
   new brunchtracker("Alderman's Tavern", "71 SW 2nd", "SW", "9:00 AM", "http://www.aldermanspdx.com", 45.522244, -122.672443, 'ChIJfV1zGQcKlVQR5mtyBr11tYk'),
   new brunchtracker("Alto Bajo", "310 SW Stark", "SW", "7:00 AM", "http://altobajopdx.com", 45.520247, -122.674767, 'ChIJlV-0gQYKlVQRdy1bfiZqCKY'),
@@ -32,6 +30,7 @@ var brunchArr = [
   new brunchtracker("Beast (Sundays, reservations only)", "5425 NE 30th", "NE", "10:00 AM", "http://www.beastpdx.com", 45.562402, -122.635071, 'ChIJ006kfOemlVQRi7M86oKahws'),
   new brunchtracker("Beeswing", "4318 NE Cully", "NE", "8:00 AM", "http://beeswingpdx.com", 45.554021, -122.601706, 'ChIJEctSj8qmlVQRgBdRZnDM9cg'),
   new brunchtracker("Beez Holgate Station", "4507 SE 27th", "SE", "10:00 AM", "http://beezholgatestation.com", 45.490144, -122.638766, 'ChIJT9j0YIQKlVQRzDKkmtfY6iU'),
+  new brunchtracker("Bergerac (Sundays only)", "5520 SE Woodstock", "SE", "9:30 AM", "http://bergeracpdx.com", 45.478983, -122.606284, 'ChIJyedl3giglVQRPMURICWkxfg'),
   new brunchtracker("Bertie Lou's", "8051 SE 17th", "SE", "8:00 AM", "http://www.yelp.com/biz/bertie-lous-portland", 45.464918, -122.647193, 'ChIJv3IZFcUKlVQRYt4E61df-uw'),
   new brunchtracker("Bijou Cafe", "132 SW 3rd", "SW", "8:00 AM", "http://bijoucafepdx.com", 45.517417, -122.690221, 'ChIJb2s7EgMKlVQRwGOchKwvZPA'),
   new brunchtracker("Bird + Bear", "2801 SE Holgate", "SE", "9:00 AM", "http://www.birdbearpdx.com", 45.490552, -122.637388, 'ChIJwSeNfYQKlVQRHvk2PFyyG1M'),
@@ -71,6 +70,7 @@ var brunchArr = [
   new brunchtracker("EastBurn", "1800 E Burnside", "NE", "10:00 AM", "http://eastburn.pagecloud.com/", 45.522706, -122.647316, 'ChIJ4fAWDLuglVQRZWSJdYBYIjs'),
   new brunchtracker("Eisenhower Bagel House", "4350 N Interstate", "N", "8:00 AM", "http://eisenhowerbagelhouse.com", 45.555353, -122.681910, 'ChIJpzTeWmmnlVQRoMVfknEpyt8'),
   new brunchtracker("Expatriate", "5425 NE 30th", "NE", "10:00 AM", "http://expatriatepdx.com", 45.562399, -122.634589, 'ChIJqbJZfOemlVQR4uM0Bd9FJOA'),
+  new brunchtracker("Fat City Cafe", "7820 SW Capitol Hwy", "SE", "6:30 AM", "http://www.yelp.com/biz/fat-city-caf%C3%A9-portland-3", 45.467757, -122.713249, 'ChIJHbBimnMLlVQRtGKYxNRRqFY'),
   new brunchtracker("Feastworks", "1325 SE Tacoma", "SE", "8:00 AM", "http://www.feastworks.com/", 45.464498, -122.652365, 'ChIJ61cYu8dylVQRkAJ9VtM7wys'),
   new brunchtracker("Fern Kitchen", "2311 SE 50th", "SE", "8:00 AM", "http://fernkitchen.com", 45.506350, -122.611227, 'ChIJEap1-V-glVQRnVq3j5Q7_o0'),
   new brunchtracker("Ford Food & Drink", "2505 SE 11th", "SE", "9:00 AM", "http://www.fordfoodanddrink.com", 45.504755, -122.654928, 'ChIJoZlHNHcKlVQR6GEPSjYAitk'),
@@ -143,6 +143,7 @@ var brunchArr = [
   new brunchtracker("Old Salt Marketplace", "5027 NE 42nd", "NE", "9:00 AM", "http://www.oldsaltpdx.com", 45.559378, -122.620682, 'ChIJAdksMcSmlVQRPbYEYmkWpeA'),
   new brunchtracker("Oliver's Cafe", "8931 SE Foster, #105", "SE", "8:00 AM", "http://oliverscafepdx.com", 45.480763, -122.571055, 'ChIJya7TLCGglVQRqM2Y9SdKLfc'),
   new brunchtracker("Olympic Provisions", "107 SE Washington", "SE", "9:00 AM", "http://www.olympiaprovisions.com/", 45.519022, -122.664279, 'ChIJDzuJgKeglVQRXyGLZ_NJERA'),
+  new brunchtracker("OP Wurst Sausage Bar", "3384 SE Division", "SE", "10:00 AM", "http://www.opwurst.com", 45.504564, -122.629880, 'ChIJcw4rPoaglVQR3C39HOjU80k'),
   new brunchtracker("Opal", "614 SW Park", "SW", "6:30 AM", "http://opalbarpdx.com", 45.519941, -122.680246, 'ChIJ06PONwUKlVQRIlhXkAz9kac'),
   new brunchtracker("Original Dinerant", "300 SW 6th", "SW", "7:30 AM", "http://www.originaldinerant.com/", 45.521436, -122.676916, 'ChIJwdOAHgQKlVQR16Hw9vj-8MM'),
   new brunchtracker("Original Hotcake House (24 hours)", "1002 SE Powell", "SE", "0:01 AM", "http://www.hotcakehouse.com/", 45.50114, -122.65558, 'ChIJ7ctb9noKlVQRUDHDKivog2g'),
