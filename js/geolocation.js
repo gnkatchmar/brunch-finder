@@ -16,32 +16,32 @@ var infoWindow;
 //"higher" negative lng value means center more to the left
 var mapOptions = {
     cityCenter: {
-        coords: {lat: 45.525, lng: -122.66},
-        zoom: 11
+        coords: {lat: 45.48, lng: -122.6},
+        zoom: 10
     },
     N: {
         coords: {lat: 45.558, lng: -122.7},
-        zoom: 13
+        zoom: 12
     },
     NE: {
         coords: {lat: 45.543, lng: -122.62},
-        zoom: 13
+        zoom: 11
     },
     SE: {
-        coords: {lat: 45.515, lng: -122.62},
-        zoom: 13
+        coords: {lat: 45.5, lng: -122.62},
+        zoom: 12
     },
     SW: {
-        coords: {lat: 45.52, lng: -122.679565},
-        zoom: 13
+        coords: {lat: 45.5, lng: -122.679565},
+        zoom: 12
     },
     NW: {
         coords: {lat: 45.53, lng: -122.7},
         zoom: 14
     },
     E: {
-        coords: {lat: 45.515, lng: -122.5},
-        zoom: 12
+        coords: {lat: 45.45, lng: -122.3},
+        zoom: 10
     },
 };
 
