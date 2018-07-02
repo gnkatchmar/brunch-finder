@@ -218,6 +218,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos){
     // lat: 45.523063, lng: -122.667677
     // Anything > lat = N
     // Anything > lng = E
+    //I-205 = lng: -122.565664
 function getQuadrant(){
     var ns = "S";
     var ew = "W";
@@ -230,6 +231,9 @@ function getQuadrant(){
         ew = "E";
     }
     concat = ns + ew;
+    if(pos.lng > -122.565664){
+        concat = "E";
+    }
     return concat;
 }
 
