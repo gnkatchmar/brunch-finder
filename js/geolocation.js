@@ -137,7 +137,7 @@ function initMap() {
     mapObj = new google.maps.Map(document.getElementById('map'), {
         center: mapOptions.cityCenter.coords,//initializes at city center
         zoom: mapOptions.cityCenter.zoom,
-        scrollwheel: false
+        scrollwheel: true
     });
 
     // convert all brunchtrackers to marker objects
@@ -269,6 +269,7 @@ function convertAllToMarkers(){
         var markerObj = new google.maps.Marker({//user marker
             position: {lat: brunchArr[i].lat, lng: brunchArr[i].lng},
             map: mapObj,
+            optimized: false,
             title: brunchArr[i].title,
             openTime: brunchArr[i].opentime
         });
