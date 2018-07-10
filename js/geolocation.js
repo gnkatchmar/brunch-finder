@@ -24,12 +24,12 @@ var mapOptions = {
         zoom: 12
     },
     NE: {
-        coords: {lat: 45.543, lng: -122.62},
-        zoom: 11
+        coords: {lat: 45.55, lng: -122.62},
+        zoom: 12
     },
     SE: {
-        coords: {lat: 45.5, lng: -122.62},
-        zoom: 12
+        coords: {lat: 45.48, lng: -122.62},
+        zoom: 11
     },
     SW: {
         coords: {lat: 45.5, lng: -122.679565},
