@@ -6,6 +6,7 @@ document.getElementById("cb2").addEventListener("onchange", getIndex);
 document.getElementById("cb3").addEventListener("onchange", getIndex);
 document.getElementById("cb4").addEventListener("onchange", getIndex);
 document.getElementById("cb5").addEventListener("onchange", getIndex);
+document.getElementById("cb6").addEventListener("onchange", getIndex);
 
 // table generation
 function addInfo(currentRestaurant){
@@ -72,6 +73,11 @@ function getIndex() {
 		if (EboxChecked == true){
 			var EboxTrue = "E";
 		}
+		// check if W is checked or not, if yes set the variable to "W"
+		var WboxChecked = document.getElementById("cb6").checked;
+		if (WboxChecked == true){
+			var WboxTrue = "W";
+		}		
 
 		// if N is selected print out N restaurants
 		for (var index = 0; index < brunchArr.length; index++) {
@@ -121,5 +127,13 @@ function getIndex() {
 			var currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
-		}		
+		}
+		// if W is selected print out w restaurants
+		for (var index = 0; index < brunchArr.length; index++) {
+			var brunchArrTime = brunchArr[index].opentime;
+			if (brunchArr[index].nhd == WboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+			var currentRestaurant = brunchArr[index];
+			addInfo(currentRestaurant);
+			}
+		}			
 }
