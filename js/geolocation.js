@@ -45,7 +45,7 @@ var mapOptions = {
         zoom: 10
     },
     W: {
-        coords: {lat: 45.44, lng: -122.8},
+        coords: {lat: 45.48, lng: -122.8},
         zoom: 11
     }
 };
