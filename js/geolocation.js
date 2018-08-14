@@ -13,16 +13,17 @@ var markerArr_NW = [];
 var markerArr_E = [];
 var markerArr_W = [];
 var markerArr_S = [];
+var markerArr_V = [];
 var selectedTime;
 var infoWindow;
 //"higher" negative lng value means center more to the left
 var mapOptions = {
     cityCenter: {
         coords: {lat: 45.48, lng: -122.6},
-        zoom: 10
+        zoom: 9
     },
     N: {
-        coords: {lat: 45.58, lng: -122.7},
+        coords: {lat: 45.575, lng: -122.7},
         zoom: 12
     },
     NE: {
@@ -30,8 +31,8 @@ var mapOptions = {
         zoom: 11
     },
     SE: {
-        coords: {lat: 45.48, lng: -122.62},
-        zoom: 11
+        coords: {lat: 45.5, lng: -122.62},
+        zoom: 12
     },
     SW: {
         coords: {lat: 45.5, lng: -122.679565},
@@ -51,6 +52,10 @@ var mapOptions = {
     },
     S: {
         coords: {lat: 45.4, lng: -122.7},
+        zoom: 11
+    },
+    V: {
+        coords: {lat: 45.65, lng: -122.6},
         zoom: 11
     }
 };
@@ -241,6 +246,7 @@ function getQuadrant(){
         ew = "E";
     }
     concat = ns + ew;
+
     if(pos.lng > -122.565664){
         concat = "E";
     }
@@ -249,6 +255,9 @@ function getQuadrant(){
     }
     if(pos.lat < 45.1){
         concat = "S";
+    }
+    if(pos.lat > 45.65){
+        concat = "V";
     }
     return concat;
 }
@@ -279,7 +288,10 @@ function getMarkerObjs(quad){
         break;
         case 'S':
         quadMarkerArr = markerArr_S;
-    break;
+        break;
+        case 'V':
+        quadMarkerArr = markerArr_V;
+        break;
     }
     return quadMarkerArr;
 }

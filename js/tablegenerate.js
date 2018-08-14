@@ -8,6 +8,7 @@ document.getElementById("cb4").addEventListener("onchange", getIndex);
 document.getElementById("cb5").addEventListener("onchange", getIndex);
 document.getElementById("cb6").addEventListener("onchange", getIndex);
 document.getElementById("cb7").addEventListener("onchange", getIndex);
+document.getElementById("cb8").addEventListener("onchange", getIndex);
 
 // table generation
 function addInfo(currentRestaurant){
@@ -83,7 +84,12 @@ function getIndex() {
 		var SboxChecked = document.getElementById("cb7").checked;
 		if (SboxChecked == true){
 			var SboxTrue = "S";
-		}			
+		}
+		// check if V is checked or not, if yes set the variable to "V"
+		var VboxChecked = document.getElementById("cb8").checked;
+		if (VboxChecked == true){
+			var VboxTrue = "V";
+		}				
 
 		// if N is selected print out N restaurants
 		for (var index = 0; index < brunchArr.length; index++) {
@@ -149,5 +155,13 @@ function getIndex() {
 			var currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
-		}				
+		}	
+		// if V is selected print out v restaurants
+		for (var index = 0; index < brunchArr.length; index++) {
+			var brunchArrTime = brunchArr[index].opentime;
+			if (brunchArr[index].nhd = VSboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+			var currentRestaurant = brunchArr[index];
+			addInfo(currentRestaurant);
+			}
+				}					
 }
