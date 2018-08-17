@@ -19,7 +19,7 @@ var infoWindow;
 //"higher" negative lng value means center more to the left
 var mapOptions = {
     cityCenter: {
-        coords: {lat: 45.48, lng: -122.6},
+        coords: {lat: 45.5, lng: -122.6},
         zoom: 9
     },
     N: {
@@ -56,7 +56,7 @@ var mapOptions = {
     },
     V: {
         coords: {lat: 45.65, lng: -122.6},
-        zoom: 11
+        zoom: 10
     }
 };
 
