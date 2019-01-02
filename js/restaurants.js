@@ -189,7 +189,6 @@ var brunchArr = [
   new brunchtracker("Hey Love (Sundays only)", "920 E Burnside", "SE", "10:00 AM", "http://www.heylovepdx.com", 45.522743, -122.65622, 'ChIJYe16-fyhlVQRlgUGKNenU78'),
   new brunchtracker("HK Cafe", "4410 SE 82nd Ave", "SE", "9:30 AM", "http://www.hkcafeportland.com", 45.490505, -122.577961, 'ChIJ5xszKTqglVQROqj7m5PXQUw'),
   new brunchtracker("Hobnob Grill", "3350 SE Morrison St", "SE", "9:00 AM", "http://www.hobnobgrille.com", 45.517017, -122.629747, 'ChIJEZGahpSglVQR8ktZ2UxYr5Q'),
-  new brunchtracker("Holiday", "3377 SE Division St", "SE", "7:00 AM", "http://www.holidaypdx.com", 45.505036, -122.629861, 'ChIJtRfoFoaglVQROBSbie-CCOg'),
   new brunchtracker("Holman's", "15 SE 28th Ave", "SE", "8:00 AM", "http://www.holmanspdx.com", 45.522573, -122.637506, 'ChIJo89E_b6glVQRZ-r6Erd1RK4'),
   new brunchtracker("HopCity", "921 SW 6th Ave", "SW", "7:00 AM", "http://www3.hilton.com/en/hotels/oregon/hilton-portland-downtown-PDXPHHH/dining/hopcity-tavern.html", 45.517684, -122.679358, 'ChIJ06PONwUKlVQRi0d7AQ5v6AQ'),
   new brunchtracker("Hour Glass Pub & Eatery", "7401 NE Glisan St", "NE", "7:00 AM", "http://www.yelp.com/biz/hour-glass-pub-and-eatery-portland", 45.526587, -122.586551, 'ChIJOyPr6BqhlVQR2Z1eheVo86I'),
