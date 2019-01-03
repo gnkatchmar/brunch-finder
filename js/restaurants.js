@@ -419,7 +419,6 @@ var brunchArr = [
   new brunchtracker("Vagabond", "4828 N Lombard St", "N", "10:00 AM", "http://www.vagabondpdx.com", 45.580285, -122.719014, 'ChIJSc_ZW-ynlVQRHc1jFzWQcrA'),
   new brunchtracker("Vancouver Black Bear Diner", "1505 SE 164th Ave, Vancouver", "V", "6:00 AM", "http://blackbeardiner.com/location/vancouver", 45.609800, -122.503577, 'ChIJkeNY1s6klVQRq4tMUbiQYoI'),
   new brunchtracker("Verdigris", "1315 NE Fremont St", "NE", "9:00 AM", "http://verdigrisrestaurant.com", 45.548390, -122.652463, 'ChIJqaZDVjqnlVQRjwRdTcOth1g'),
-  new brunchtracker("Village Inn (Lloyd Center)", "1621 NE 10th Ave", "NE", "7:00 AM", "http://www.villageinn.com/locations/700022", 45.534711, -122.655833, 'ChIJozlsSUunlVQRUBn6ApSjYJc'),
   new brunchtracker("Village Inn (SE)", "10301 SE Stark St", "E", "5:30 AM", "http://www.villageinn.com/locations/110053", 45.519360, -122.556796, 'ChIJ9Rok5aGhlVQRsxYTZO-XCH4'),
   new brunchtracker("Vivienne Kitchen & Pantry", "4128 NE Sandy Blvd", "NE", "9:00 AM", "http://www.viviennepdx.com", 45.535510, -122.620706, 'ChIJ90nPW9eglVQR0bEg4vApGgE'),
   new brunchtracker("Waffle Window (Bethany Village)", "4708 NW Bethany Blvd", "W", "8:00 AM", "http://wafflewindow.com/bethany-village-centre", 45.554265, -122.836159, 'ChIJ3z177aUIlVQRL5DA6Gl9ydU'),
