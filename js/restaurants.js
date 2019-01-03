@@ -333,7 +333,6 @@ var brunchArr = [
   new brunchtracker("Ristorante Di Pompello", "177 E Historic Columbia River Hwy, Troutdale", "E", "8:00 AM", "http://dipompello.com", 45.540945, -122.387556, 'ChIJxTiXM1e9lVQRd5KFLwpr5tI'),
   new brunchtracker("Rivershore Bar & Grill", "1900 Clackamette Dr, Oregon City", "S", "7:00 AM", "http://www.rivershorerestaurant.com", 45.367639, -122.601765, 'ChIJJ8-i57Z2lVQRFB6i6PJSr-k'),
   new brunchtracker("Rocking Frog Cafe", "2511 SE Belmont St", "SE", "8:00 AM", "http://rockingfrogpdx.com", 45.516628, -122.639782, 'ChIJh0hXsJeglVQR5Qea2yIPJCQ'),
-  new brunchtracker("Roman Candle", "3377 SE Division St", "SE", "9:00 AM", "http://www.romancandlebaking.com", 45.505015, -122.629875, 'ChIJtRfoFoaglVQROBSbie-CCOg'),
   new brunchtracker("Rosa Rosa", "750 Alder St", "SW", "8:00 AM", "http://www.rosarosapdx.com", 45.520011, -122.68015, 'ChIJXT1DiwQKlVQR-bTq4XovAl0'),
   new brunchtracker("Rose VL Deli (Saturdays only)", "6424 SE Powell Blvd", "SE", "9:00 AM", "http://www.yelp.com/biz/rose-vl-deli-portland-2", 45.497159, -122.596676, 'ChIJcfYuT0KglVQRg__zfmjYWbU'),
 	new brunchtracker("Rosswood", "0470 SW Hamilton Ct", "SW", "8:00 AM", "http://www.riversedgehotel.com/experiences", 45.489659, -122.671467, 'ChIJlbOY1V4KlVQR95x0wNhXzz4'),
