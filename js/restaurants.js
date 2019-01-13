@@ -300,7 +300,6 @@ var brunchArr = [
   new brunchtracker("Pattie's Home Plate Cafe", "8501 N Lombard St", "N", "9:00 AM", "http://www.yelp.com/biz/patties-home-plate-cafe-portland", 45.590077, -122.753768, 'ChIJDRZ0zAGolVQRfZp87dXCx8c'),
   new brunchtracker("Patton Maryland", "5101 N Interstate Ave", "N", "10:00 AM", "http://pattonmaryland.com", 45.555494, -122.675436, 'ChIJEQY333KnlVQRN2bA2ed4VhE'),
   new brunchtracker("Pepper Box", "932 SE Morrison St", "SE", "8:30 AM", "http://www.pepperboxpdx.com", 45.517011, -122.655966, 'ChIJfR5TZUinlVQR0xIqShHJbSI'),
-  new brunchtracker("Perlot (Sundays only)", "4605 NE Fremont St", "NE", "8:30 AM", "http://www.southforkpdx.com", 45.548503, -122.615910, 'ChIJtUjY39KmlVQRnnjr1vUDjKU'),
   new brunchtracker("Petisco", "1411 NE Broadway St", "NE", "9:00 AM", "http://petiscopdx.com", 45.535217, -122.651077, 'ChIJ7xfsR7WglVQR7T3S_ylZcpI'),
   new brunchtracker("Petite Provence (NE Alberta)", "1824 NE Alberta St", "NE", "7:00 AM", "http://www.provencepdx.com/ne-alberta-portland", 45.558934, -122.646207, 'ChIJnx54jh-nlVQRYoxJgM-MwbY'),
   new brunchtracker("Petite Provence Boulangerie & Patisserie", "3420 NE Sandy Blvd", "NE", "7:00 AM", "http://www.provencepdx.com/ne-alberta-portland", 45.53218, -122.62852, 'ChIJYc6LWMWglVQR0SS3ko27akA'),
