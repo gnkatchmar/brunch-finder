@@ -49,7 +49,7 @@ function visPage(pageId){
 // add nav event system
 document.getElementById('nav_main').addEventListener('click', function(e){
     switch(e.target.id.toLowerCase()){
-        case "site-title":
+        case "nav-home":
             visPage('launchpage');
         break;
 

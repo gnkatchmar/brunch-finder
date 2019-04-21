@@ -44,7 +44,7 @@ header {
 }
 
 #site-title {
-  border: 2px solid white;
+  /* border: 2px solid white; */
   padding: 5px;
   margin: 5px;
 }
@@ -79,14 +79,6 @@ nav ul li {
 nav li:hover{
   background-color: lightblue;
   color: black;
-}
-
-nav li hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
 }
 
 /*////////Btns Secondary////////*/
