@@ -272,7 +272,7 @@ var brunchArr = [
   new brunchtracker("Marathon Taverna", "1735 W Burnside St", "NW", "7:00 AM", "http://marathontaverna.com", 45.523076, -122.689067, 'ChIJsfv3Tx0KlVQRY9nhWchz7j8'),
   new brunchtracker("Marco's Cafe and Espresso Bar", "7910 SW 35th Dr", "W", "8:00 AM", "http://www.marcoscafe.com", 45.467393, -122.712684, 'ChIJs13nonMLlVQRYuhZOesPOKc'),
 	new brunchtracker("Master Kong", "8435 SE Division St", "SE", "9:00 AM", "http://www.yelp.com/biz/master-kong-portland", 45.504781, -122.575838, 'ChIJ5cB4IE2glVQRYMZy4urBIh8'),
-	new brunchtracker("Maurice (Saturdays only", "921 SW Oak St", "SW", "9:00 AM", "http://www.mauricepdx.com", 45.522763, -122.680440, 'ChIJ58lRwAMKlVQRJrg5ehoccpU'),
+	new brunchtracker("Maurice (Saturdays only)", "921 SW Oak St", "SW", "9:00 AM", "http://www.mauricepdx.com", 45.522763, -122.680440, 'ChIJ58lRwAMKlVQRJrg5ehoccpU'),
   new brunchtracker("McCrae's Country Cafe", "401 W Powell Blvd, Gresham", "E", "6:00 AM", "http://www.yelp.com/biz/mccraes-country-cafe-gresham", 45.497349, -122.435910, 'ChIJdXWRjfKYlVQR5fysltskrKc'),
   new brunchtracker("McQueen's Bar & Grill", "14680 SE River Rd, Milwaukie", "S", "6:00 AM", "http://www.yelp.com/biz/mcqueens-bar-and-grill-portland", 45.416572, -122.645167, 'ChIJF4VoY4t0lVQRmPqDqvZtlBU'),
   new brunchtracker("Mehri's Bakery and Cafe", "6923 SE 52nd Ave", "SE", "8:00 AM", "http://mehris.com", 45.472746, -122.610034, 'ChIJ8c1bAKkKlVQRST5PRcM_FLI'),
