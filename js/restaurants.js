@@ -379,7 +379,7 @@ var brunchArr = [
   new brunchtracker("Shari's Cafe & PIes (San Rafael) (24 hours)", "1832 NE 122nd Ave", "E", "1:00 AM", "http://www.sharis.com/locations/oregon/san-rafael-oregon-cafe", 45.536024, -122.537349, 'ChIJQXrBfNajlVQRCWZfXKm7T-g'),
   new brunchtracker("Shari's Cafe & PIes (Troutdale) (24 hours)", "557 NW Phoenix Dr, Troutdale", "E", "1:00 AM", "http://www.sharis.com/locations/oregon/troutdale-oregon-cafe", 45.544217, -122.394056, 'ChIJSRJd11G9lVQRullF3XVQBx8'),
   new brunchtracker("Shari's Cafe & PIes (Vancouver) (24 hours)", "4720 NE Thurston Way, Vancouver", "V", "1:00 AM", "http://www.sharis.com/locations/washington/vancouver-washington-cafe", 45.657069, -122.58936, 'ChIJQRhMlZSvlVQRI7i8Ra5iMA4'),
-  new brunchtracker("Shilo Restaurant Portland Airport", "11707 NE Airport Way", "NE", "6:00 AM", "http://www.shiloinns.com/shilo-inns-portland-airport/dining", 45.567630, -122.542570, 'ChIJ1QXDFoujlVQRI6ku-YPYO60'),
+  new brunchtracker("Shilo Restaurant Portland Airport", "11707 NE Airport Way", "E", "6:00 AM", "http://www.shiloinns.com/shilo-inns-portland-airport/dining", 45.567630, -122.542570, 'ChIJ1QXDFoujlVQRI6ku-YPYO60'),
   new brunchtracker("Shirley's Tippy Canoe", "28242 E Historic Columbia River Hwy, Troutdale", "E", "8:00 AM", "http://shirleystippycanoe.business.site", 45.516423, -122.369485, 'ChIJG1bMQYqXlVQRXYW9bAxqITo'),
   new brunchtracker("Shorewood Market & Cafe", "5555 E Evergreen Blvd D, Vancouver", "V", "10:00 AM", "http://shorewoodrestaurantandbar.com", 45.618137, -122.618137, 'ChIJ8YnYtO2llVQRTNAgLRHa17I'),
   new brunchtracker("Side Door", "425 SE Washington St", "SE", "11:00 AM", "http://www.thesidedoorpdx.com", 45.518812, -122.661173, 'ChIJy-qlEaeglVQROPemexzg8z4'),
