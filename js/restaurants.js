@@ -226,6 +226,7 @@ var brunchArr = [
   new brunchtracker("J & M Cafe", "537 SE Ash St", "SE", "8:00 AM", "http://jandmcafepdx.com", 45.521617, -122.659897, 'ChIJoerhDaaglVQRwRUWipyDdNA'),
   new brunchtracker("Jackpot Bistro", "1652 NW Fairview Dr, Gresham", "E", "9:00 AM", "http://www.jackpotbistro.com", 45.508963, -122.430478, 'ChIJAQJejIyYlVQRTGslsdVonyM'),
   new brunchtracker("Jackrabbit", "830 SW 6th Ave", "SW", "9:30 AM", "http://www.gojackrabbitgo.com/menus/breakfast", 45.517903, -122.678962, 'ChIJCQtwFQUKlVQR8NOCoNEYiRk'),
+  new brunchtracker("Jake's Grill", "611 SW 10th Ave", "SW", "7:30 AM", "http://www.mccormickandschmicks.com/locations/portland-oregon/portland-oregon/swtenthave.aspx", 45.520551, -122.6820986, 'ChIJUct1ngQKlVQRzYxD8Y3xKIg'),
   new brunchtracker("Jam on Hawthorne", "2239 SE Hawthorne Blvd", "SE", "7:30 AM", "http://www.jamonhawthorne.com", 45.512245, -122.642719, 'ChIJi4fI1ZuglVQRKfnLrpsIJN8'),
   new brunchtracker("Jinx Neighborhood Bistro", "3000 NE Killingsworth", "NE", "10:00 AM", "http://jinxpdx.com", 45.562490, -122.634560, 'ChIJtSDr9CWnlVQRi8dOUb6YVCs'),
   new brunchtracker("Joe Brown's Cafe", "817 Main St, Vancouver", "V", "7:00 AM", "http://www.joebrownscafe.com", 45.643187, -122.669948, 'ChIJF77cG7GolVQRpy7asl6WjE0'),
