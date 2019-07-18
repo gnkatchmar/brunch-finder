@@ -275,7 +275,7 @@ var brunchArr = [
   new brunchtracker("Lil' Cooperstown Bar & Grill (Oregon City)", "19352 Molalla Ave, Oregon City", "S", "9:00 AM", "http://www.lilcooperstown.com", 45.326548, -122.582083, 'ChIJdTGdD7hwlVQRGUFy-H5eGyM'),
   new brunchtracker("Lil' Cooperstown Bar & Grill (West Linn)", "1817 Willamette Falls Dr, West Linn", "S", "9:00 AM", "http://www.lilcooperstown.com", 45.343840, -122.655143, 'ChIJyZK27ApxlVQRLjE5lf3KARM'),
   new brunchtracker("Linda's Homeplate", "12200 NE 60th Way, Vancouver", "V", "8:00 AM", "http://www.yelp.com/biz/lindas-homeplate-vancouver", 45.666758, -122.547826, 'ChIJWdeDWBqwlVQRBAmKQOa-0dA'),
-  new brunchtracker("Lisa's Country Kitchen", "9324 NE 76th St, Vancouver", "V", "7:00 AM", "http:/lisas.cafe", 45.677507, -122.535009, 'ChIJ5xbHKSiwlVQRyTEB1uuhcrM'),
+  new brunchtracker("Lisa's Country Kitchen", "9324 NE 76th St, Vancouver", "V", "7:00 AM", "http://lisas.cafe", 45.677507, -122.535009, 'ChIJ5xbHKSiwlVQRyTEB1uuhcrM'),
   new brunchtracker("Little Griddle", "3520 NE 42nd Ave", "NE", "7:00 AM", "http://www.yelp.com/biz/little-griddle-portland", 45.548529, -122.620053, 'ChIJsUkQgtOmlVQRII9KYhEeAtI'),
   new brunchtracker("Little River Cafe", "0315 SW Montgomery St #310", "SW", "7:00 AM", "http://littlerivercafe.com", 45.50945, -122.673995, 'ChIJt8S08xIKlVQR8q16z7c07U0'),
   new brunchtracker("Little T American Baker", "2600 SE Division St", "SE", "8:00 AM", "http://littletbaker.com/division", 45.504668, -122.639392, 'ChIJFWqwooOglVQRY2BkWFcTXu8'),
