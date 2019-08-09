@@ -122,6 +122,7 @@ function drawPhotos(brunchObj, size, quantity){
     var website = active_BrunchArr[indx].website;
     var title = active_BrunchArr[indx].title;
     var openTime = active_BrunchArr[indx].opentime;
+    var address = active_BrunchArr[indx].address;
     var photoUrl;
     if(active_BrunchArr[indx].imgs[1].length > 0){
         photoUrl = active_BrunchArr[indx].imgs[1][getRandom(active_BrunchArr[indx].imgs[1].length)];
@@ -132,7 +133,7 @@ function drawPhotos(brunchObj, size, quantity){
     var target = 'pic' + n;
     var container = 'container_img' + imgsFilled;
 
-    document.getElementById(target).innerHTML = "<figure id='" + container + "' class='invisible'><img src='" + photoUrl + "'></figure><figcaption><div class='f-title'>" + brunchObj.title + "</div><div class='f-time'>Opens: " + brunchObj.opentime + "</div><div><a href='" + brunchObj.website + "' class='f-site' target='blank'>website</div></figcaption>";
+    document.getElementById(target).innerHTML = "<figure id='" + container + "' class='invisible'><img src='" + photoUrl + "'></figure><figcaption><div class='f-title'>" + brunchObj.title + "</div><div class='f-time'>" + brunchObj.address + "<br>Opens: " + brunchObj.opentime + "</div><div><a href='" + brunchObj.website + "' class='f-site' target='blank'>website</div></figcaption>";
 
     setTimeout(function(){
         replaceClass(target, 'invisible', 'visible');
