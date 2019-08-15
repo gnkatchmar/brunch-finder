@@ -24,7 +24,7 @@ var mapOptions = {
     },
     N: {
         coords: {lat: 45.575, lng: -122.7},
-        zoom: 12
+        zoom: 11
     },
     NE: {
         coords: {lat: 45.55, lng: -122.62},
@@ -48,7 +48,7 @@ var mapOptions = {
     },
     W: {
         coords: {lat: 45.48, lng: -122.8},
-        zoom: 10
+        zoom: 9
     },
     S: {
         coords: {lat: 45.38, lng: -122.7},
