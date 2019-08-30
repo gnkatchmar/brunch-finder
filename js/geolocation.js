@@ -14,6 +14,7 @@ var markerArr_E = [];
 var markerArr_W = [];
 var markerArr_S = [];
 var markerArr_V = [];
+var markerArr_H30 = [];
 var selectedTime;
 var infoWindow;
 //"higher" negative lng value means center more to the left
@@ -56,6 +57,10 @@ var mapOptions = {
     },
     V: {
         coords: {lat: 45.65, lng: -122.6},
+        zoom: 10
+    },
+    H30: {
+        coords: {lat: 45.75, lng: -123.0},
         zoom: 10
     }
 };
@@ -292,6 +297,9 @@ function getMarkerObjs(quad){
         case 'V':
         quadMarkerArr = markerArr_V;
         break;
+        case 'H30':
+            quadMarkerArr = markerArr_H30;
+            break;
     }
     return quadMarkerArr;
 }
