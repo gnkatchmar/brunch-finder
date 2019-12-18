@@ -324,6 +324,7 @@ function convertAllToMarkers(){
             position: {lat: brunchArr[i].lat, lng: brunchArr[i].lng},
             map: mapObj,
             optimized: false,
+            openTime: brunchArr[i].opentime,
             title: brunchArr[i].title + '\n' + brunchArr[i].address + '\n' + brunchArr[i].opentime 
         });
         markerObj.setIcon('https://maps.google.com/mapfiles/ms/icons/blue-dot.png');

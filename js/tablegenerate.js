@@ -74,7 +74,7 @@ function getIndex() {
 		if (EboxChecked == true){
 			var EboxTrue = "E";
 		}
-"
+
 		var WboxChecked = document.getElementById("cb6").checked;
 		if (WboxChecked == true){
 			var WboxTrue = "W";
@@ -92,12 +92,12 @@ function getIndex() {
 
 		var H30boxChecked = document.getElementById("cb9").checked;
 		if (H30boxChecked == true){
-			var VboxTrue = "H30";
+			var H30boxTrue = "H30";
 		}
 	
 		var GboxChecked = document.getElementById("cb10").checked;
 		if (GboxChecked == true){
-			var VboxTrue = "G";
+			var GboxTrue = "G";
 		}							
 
 		// if x is selected print out x restaurants

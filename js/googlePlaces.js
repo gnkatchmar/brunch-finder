@@ -121,7 +121,7 @@ function drawPhotos(brunchObj, size, quantity){
     var indx = photosObj.indx;
     var website = active_BrunchArr[indx].website;
     var title = active_BrunchArr[indx].title;
-    var openTime = active_BrunchArr[indx].opentime;
+    var opentime = active_BrunchArr[indx].opentime;
     var address = active_BrunchArr[indx].address;
     var photoUrl;
     if(active_BrunchArr[indx].imgs[1].length > 0){
