@@ -35,7 +35,7 @@
         <button type="button" class="btns_secondary btn_nav" id="btn_refresh">Three More Suggestions</button>
         <button type="button" class="btns_secondary btn_nav" id="btn_nearBy">Three Nearby Suggestions</button>
       </div>
-      <footer>Last Updated: December 17, 2019 (now with 539 restaurants)
+      <footer>Last Updated: January 16, 2000 (now with 539 restaurants)
         <br>
         Based on an August 2016 Code Fellows team
         <a href="https://github.com/gnkatchmar/Breakfast-Club">project</a>
@@ -45,40 +45,41 @@
   <section id="searchpage" class="none">
     <div id="map"></div>
     <div>
-    <div id="timeandlocation">
-      <h3 id="timeandlocationheader"> Select area(s) and visit time to generate report</h3>
-      <form name="nhoodselect" onsubmit = "test(nh1, nh2, nh3, nh4, nh5, nh6); return false">
-        <input type="checkbox" name="nh1" data-quad="N" value="NPDX" id="cb0" > N Portland<br>
-        <input type="checkbox" name="nh2" data-quad="NE" value="NEPDX" id="cb1" > NE Portland<br>
-        <input type="checkbox" name="nh3" data-quad="NW" value="NWPDX" id="cb2" > NW Portland<br>
-        <input type="checkbox" name="nh4" data-quad="SE" value="SEPDX" id="cb3" > SE Portland<br>
-        <input type="checkbox" name="nh5" data-quad="SW" value="SWPDX" id="cb4" > SW Portland<br>
-        <input type="checkbox" name="nh6" data-quad="E" value="EPDX" id="cb5" > East of I-205<br>
-        <input type="checkbox" name="nh7" data-quad="W" value="WPDX" id="cb6" > Westside<br>
-        <input type="checkbox" name="nh8" data-quad="S" value="SPDX" id="cb7" > Southside<br>
-        <input type="checkbox" name="nh9" data-quad="V" value="V" id="cb8" > SW Washington<br>
-        <input type="checkbox" name="nh10" data-quad="H30" value="H30" id="cb9" > HWY 30<br>
-        <input type="checkbox" name="nh11" data-quad="G" value="G" id="cb10" > Columbia Gorge<br>
-      </form>
-      <div id="timeselect">
-        <form name="timeselect">
-          <select id="dropdown">
-            <option value="0">6:00 AM</option>
-            <option value="1">6:30 AM</option>
-            <option value="2">7:00 AM</option>
-            <option value="3">7:30 AM</option>
-            <option value="4">8:00 AM</option>
-            <option value="5">8:30 AM</option>
-            <option value="6">9:00 AM</option>
-            <option value="7">9:30 AM</option>
-            <option value="8">10:00 AM</option>
-            <option value="9">10:30 AM</option>
-            <option value="10">11:00 AM</option>
-            <option value="11" selected="selected">Select Visit Time</option>
-          </select>
-        </form>
+      <div id="timeandlocation">
+        <div id="two-col">
+          <form name="nhoodselect" id="cboxes" onsubmit = "return false">
+            <input type="checkbox" name="nh1" data-quad="N" value="NPDX" id="cb0" > N Portland<br>
+            <input type="checkbox" name="nh2" data-quad="NE" value="NEPDX" id="cb1" > NE Portland<br>
+            <input type="checkbox" name="nh3" data-quad="NW" value="NWPDX" id="cb2" > NW Portland<br>
+            <input type="checkbox" name="nh4" data-quad="SE" value="SEPDX" id="cb3" > SE Portland<br>
+            <input type="checkbox" name="nh5" data-quad="SW" value="SWPDX" id="cb4" > SW Portland<br>
+            <input type="checkbox" name="nh6" data-quad="E" value="EPDX" id="cb5" > East of I-205<br>
+            <input type="checkbox" name="nh7" data-quad="W" value="WPDX" id="cb6" > Westside<br>
+            <input type="checkbox" name="nh8" data-quad="S" value="SPDX" id="cb7" > Southside<br>
+            <input type="checkbox" name="nh9" data-quad="V" value="V" id="cb8" > SW Washington<br>
+            <input type="checkbox" name="nh10" data-quad="H30" value="H30" id="cb9" > HWY 30<br>
+            <input type="checkbox" name="nh11" data-quad="G" value="G" id="cb10" > Columbia Gorge<br>
+          </form>
         </div>
-      </div>
+        <div id="timeselect">
+          <form name="timeselect">
+            <select id="dropdown">
+              <option value="0">6:00 AM</option>
+              <option value="1">6:30 AM</option>
+              <option value="2">7:00 AM</option>
+              <option value="3">7:30 AM</option>
+              <option value="4">8:00 AM</option>
+              <option value="5">8:30 AM</option>
+              <option value="6">9:00 AM</option>
+              <option value="7">9:30 AM</option>
+              <option value="8">10:00 AM</option>
+              <option value="9">10:30 AM</option>
+              <option value="10">11:00 AM</option>
+              <option value="11" selected="selected"> Select visit time here</option>
+            </select>
+            </form>
+          </div>
+    </div>
     <section id="container_table">
       <table id="restaurantListTable"></table>
     </section>

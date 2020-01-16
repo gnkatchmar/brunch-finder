@@ -1,16 +1,6 @@
 //Table generation
 document.getElementById("dropdown").addEventListener("change", getIndex);
-document.getElementById("cb0").addEventListener("onchange", getIndex);
-document.getElementById("cb1").addEventListener("onchange", getIndex);
-document.getElementById("cb2").addEventListener("onchange", getIndex);
-document.getElementById("cb3").addEventListener("onchange", getIndex);
-document.getElementById("cb4").addEventListener("onchange", getIndex);
-document.getElementById("cb5").addEventListener("onchange", getIndex);
-document.getElementById("cb6").addEventListener("onchange", getIndex);
-document.getElementById("cb7").addEventListener("onchange", getIndex);
-document.getElementById("cb8").addEventListener("onchange", getIndex);
-document.getElementById("cb9").addEventListener("onchange", getIndex);
-document.getElementById("cb10").addEventListener("onchange", getIndex);
+document.getElementById("cboxes").addEventListener("change", getIndex);
 
 function addInfo(currentRestaurant){
 
@@ -98,12 +88,12 @@ function getIndex() {
 		var GboxChecked = document.getElementById("cb10").checked;
 		if (GboxChecked == true){
 			var GboxTrue = "G";
-		}							
+		}
 
 		// if x is selected print out x restaurants
 		for (var index = 0; index < brunchArr.length; index++) {
 				var brunchArrTime = brunchArr[index].opentime;
-				if (brunchArr[index].nhd == NboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+				if (brunchArr[index].nhd === NboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 				var currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
@@ -111,7 +101,7 @@ function getIndex() {
 
 		for (var index = 0; index < brunchArr.length; index++) {
 				var brunchArrTime = brunchArr[index].opentime;
-				if (brunchArr[index].nhd == NEboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+				if (brunchArr[index].nhd === NEboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 				var currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
@@ -119,7 +109,7 @@ function getIndex() {
 
 		for (var index = 0; index < brunchArr.length; index++) {
 				var brunchArrTime = brunchArr[index].opentime;
-				if (brunchArr[index].nhd == NWboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+				if (brunchArr[index].nhd === NWboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 				var currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
@@ -127,7 +117,7 @@ function getIndex() {
 	
 		for (var index = 0; index < brunchArr.length; index++) {
 				var brunchArrTime = brunchArr[index].opentime;
-				if (brunchArr[index].nhd == SEboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+				if (brunchArr[index].nhd === SEboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 				var currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
@@ -135,7 +125,7 @@ function getIndex() {
 
 		for (var index = 0; index < brunchArr.length; index++) {
 				var brunchArrTime = brunchArr[index].opentime;
-				if (brunchArr[index].nhd == SWboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+				if (brunchArr[index].nhd === SWboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 				var currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
@@ -143,7 +133,7 @@ function getIndex() {
 
 		for (var index = 0; index < brunchArr.length; index++) {
 			var brunchArrTime = brunchArr[index].opentime;
-			if (brunchArr[index].nhd == EboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+			if (brunchArr[index].nhd === EboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 			var currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
@@ -151,7 +141,7 @@ function getIndex() {
 
 		for (var index = 0; index < brunchArr.length; index++) {
 			var brunchArrTime = brunchArr[index].opentime;
-			if (brunchArr[index].nhd == WboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+			if (brunchArr[index].nhd === WboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 			var currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
@@ -159,7 +149,7 @@ function getIndex() {
 
 		for (var index = 0; index < brunchArr.length; index++) {
 			var brunchArrTime = brunchArr[index].opentime;
-			if (brunchArr[index].nhd == SboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+			if (brunchArr[index].nhd === SboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 			var currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
@@ -167,7 +157,7 @@ function getIndex() {
 
 		for (var index = 0; index < brunchArr.length; index++) {
 			var brunchArrTime = brunchArr[index].opentime;
-			if (brunchArr[index].nhd = VboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+			if (brunchArr[index].nhd === VboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 			var currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
@@ -175,7 +165,7 @@ function getIndex() {
 	
 		for (var index = 0; index < brunchArr.length; index++) {
 			var brunchArrTime = brunchArr[index].opentime;
-			if (brunchArr[index].nhd = H30boxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+			if (brunchArr[index].nhd === H30boxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 			var currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
@@ -183,7 +173,7 @@ function getIndex() {
 
 		for (var index = 0; index < brunchArr.length; index++) {
 			var brunchArrTime = brunchArr[index].opentime;
-			if (brunchArr[index].nhd = GboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
+			if (brunchArr[index].nhd === GboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
 			var currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}

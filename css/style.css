@@ -188,13 +188,17 @@ figcaption a {
 }
 
 #timeandlocation {
-  margin: 5px 20px;
+   margin: 5px 20px;
   padding: 10px;
   display: inline-block;
   background-color: lightblue;
   border-radius: 3px;
   align-content: top;
   vertical-align: top;
+}
+
+#two-col {
+  columns: 2;
 }
 
 #timeandlocationheader {
