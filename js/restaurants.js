@@ -196,6 +196,7 @@ var brunchArr = [
   new brunchtracker("Finnigan's Bar & Grill", "2810 Portland Rd, Newberg", "W", "7:00 AM", "http://www.yelp.com/biz/finnigans-mill-newberg", 45.304860, -122.950960, 'ChIJAUVBLGVqlVQRpQSQ7xq5UZ4'),
   new brunchtracker("Fireside", "801 NW 23rd Ave", "NW", "10:00 AM", "http://pdxfireside.com", 45.528580, -122.698770, 'ChIJdbO_-PAJlVQRhWfdWLlIHHY'),
   new brunchtracker("Fireside Grill", "8136 SW Hall Blvd, Beaverton", "W", "9:00 AM", "http://www.thefiresidegrillpdx.com", 45.461310, -122.793798, 'ChIJSwTXUk4MlVQRPdMXKteB3YE'),
+  new brunchtracker("Fixin' To", "8218 N Lombard", "N", "10:00 AM", "http://www.thefixinto.com", 45.589055, -122.751284, 'ChIJb0iXbgColVQRsngHkKccOrQ'),
   new brunchtracker("Ford Food & Drink", "2505 SE 11th Ave", "SE", "9:00 AM", "http://www.fordfoodanddrink.com", 45.504755, -122.654928, 'ChIJoZlHNHcKlVQR6GEPSjYAitk'),
   new brunchtracker("Fried Egg I'm In Love", "3549 SE Hawthorne Blvd", "SE", "8:00 AM", "http://www.friedegglove.com", 45.512044, -122.627474, 'ChIJnyMssJGglVQRjz307xDeYpM'),
   new brunchtracker("Frontier Public House", "4909 NE Hazel Dell Ave, Vancouver", "V", "10:00 AM", "http://www.frontierpublichouse.com", 45.657450, -122.666350, 'ChIJAVp8Yt-ulVQRHtYtKp1blKU'),
