@@ -458,7 +458,6 @@ var brunchArr = [
   new brunchtracker("Shari's Cafe & PIes (Vancouver) (24 hours)", "4720 NE Thurston Way, Vancouver", "V", "1:00 AM", "http://www.sharis.com/locations/washington/vancouver-washington-cafe", 45.657069, -122.58936, 'ChIJQRhMlZSvlVQRI7i8Ra5iMA4'),
   new brunchtracker("Shari's Cafe & PIes (Wilsonville)", "29690 Town Center Loop W, Wilsonville", "S", "6:00 AM", "http://www.sharis.com/locations/oregon/wilsonville-oregon-cafe", 45.305190, -122.766080, 'ChIJf6caKvJulVQRNIQ4sKFIqa0'),
   new brunchtracker("Shilo Restaurant Portland Airport", "11707 NE Airport Way", "E", "6:00 AM", "http://www.shiloinns.com/shilo-inns-portland-airport/dining", 45.567630, -122.542570, 'ChIJ1QXDFoujlVQRI6ku-YPYO60'),
-  new brunchtracker("Shirley's Tippy Canoe", "28242 E Historic Columbia River Hwy, Troutdale", "E", "8:00 AM", "http://shirleystippycanoe.business.site", 45.516423, -122.369485, 'ChIJG1bMQYqXlVQRXYW9bAxqITo'),
   new brunchtracker("Shorewood Market & Cafe", "5555 E Evergreen Blvd D, Vancouver", "V", "10:00 AM", "http://shorewoodrestaurantandbar.com", 45.618137, -122.618137, 'ChIJ8YnYtO2llVQRTNAgLRHa17I'),
   new brunchtracker("Side Door", "425 SE Washington St", "SE", "11:00 AM", "http://www.thesidedoorpdx.com", 45.518812, -122.661173, 'ChIJy-qlEaeglVQROPemexzg8z4'),
   new brunchtracker("Six Corners Cafe", "7000 SW Beaverton Hillsdale Hwy", "W", "7:30 AM", "http://www.facebook.com/Six-Corners-Cafe-122416784474888", 45.485729, -122.749167, 'ChIJsQG9gfILlVQRUhMRaXxGtwI'),
