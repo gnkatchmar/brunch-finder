@@ -318,6 +318,7 @@ function convertAllToMarkers(){
 
     var arr = [];
     var targetQuadArr;
+    var infowindow = new google.maps.InfoWindow();
 
     for(var i=0; i<brunchArr.length; i++){
         var markerObj = new google.maps.Marker({//user marker
@@ -325,10 +326,23 @@ function convertAllToMarkers(){
             map: mapObj,
             optimized: false,
             openTime: brunchArr[i].opentime,
-            title: brunchArr[i].title + '\n' + brunchArr[i].address + '\n' + brunchArr[i].opentime 
-        });
+            title: brunchArr[i].title + '\n' + brunchArr[i].address + '\n' + brunchArr[i].opentime
+         });
+
+         google.maps.event.addListener(markerObj, 'click', (function(markerObj, i) {
+            return function() {
+                infowindow.setContent(
+                    '<b>' + brunchArr[i].title + '</b>'+
+                    '<p>Opens at ' + brunchArr[i].opentime + '</p>' + 
+                    '<p>'+ brunchArr[i].address + '</p>' +
+                    '<p><a href="' + brunchArr[i].website + '">website</a></p>')
+                infowindow.open(map, markerObj);
+            }
+        })(markerObj, i));
+     
         markerObj.setIcon('https://maps.google.com/mapfiles/ms/icons/blue-dot.png');
         markerObj.setAnimation(google.maps.Animation.DROP);
+
         // this array is returned
         arr.push(markerObj);
 
@@ -361,3 +375,4 @@ function convertAllToMarkers(){
        }
    }
  }
+
