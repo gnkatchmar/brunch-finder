@@ -314,7 +314,6 @@ function getMarkerObjs(quad){
 
 function convertAllToMarkers(){
     // converts all brunchtrackers to marker objects
-    // also fills global quad arrays: markerArr_NE, markerArr_SE, markerArr_SW,
 
     var arr = [];
     var targetQuadArr;
