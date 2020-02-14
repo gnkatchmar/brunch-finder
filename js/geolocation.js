@@ -1,28 +1,29 @@
 // GEOLOCATION API
-var x = document.getElementById('currentPosition');
-var pos;
-var userQuad = null;
-var mapObj;
-var checkboxes_geo;
-var brunchMarkerObjs;
-var markerArr_N = [];
-var markerArr_NE = [];
-var markerArr_SE = [];
-var markerArr_SW = [];
-var markerArr_NW = [];
-var markerArr_E = [];
-var markerArr_W = [];
-var markerArr_S = [];
-var markerArr_V = [];
-var markerArr_H30 = [];
-var markerArr_G = [];
-var selectedTime;
-var infoWindow;
+let x = document.getElementById('currentPosition');
+let pos;
+let userQuad = null;
+let mapObj;
+let checkboxes_geo;
+let brunchMarkerObjs;
+let markerArr_N = [];
+let markerArr_NE = [];
+let markerArr_SE = [];
+let markerArr_SW = [];
+let markerArr_NW = [];
+let markerArr_E = [];
+let markerArr_W = [];
+let markerArr_S = [];
+let markerArr_V = [];
+let markerArr_H30 = [];
+let markerArr_G = [];
+let selectedTime;
+let infoWindow;
+
 //"higher" negative lng value means center more to the left
-var mapOptions = {
+let mapOptions = {
     cityCenter: {
         coords: {lat: 45.56, lng: -122.6},
-        zoom: 9
+        zoom: 8
     },
     N: {
         coords: {lat: 45.575, lng: -122.7},
@@ -71,10 +72,10 @@ var mapOptions = {
 };
 
 // Utility function
-var timerStart, timerEnd;
+let timerStart, timerEnd;
 function timer(mode){
     if(mode === 'start' || mode === 'stop'){
-        var now = Date.now();
+        let now = Date.now();
         if(mode === 'start'){
             timerStart = now;
         } else {
@@ -88,15 +89,15 @@ function timer(mode){
 // Event listener for form elements
 window.addEventListener('load', function(){
     initPhotos();
-    var formEl_nhood = document.forms.nhoodselect;
+    let formEl_nhood = document.forms.nhoodselect;
     document.getElementById('timeandlocation').addEventListener('change', function(e){
 
         // when checkboxes are changed,
         // show/hide corresponding markers
         if(e.target.tagName === 'INPUT'){
-            var val = e.target.value;
-            var selectedCoords = [];
-            var selectedQuads = [];
+            let val = e.target.value;
+            let selectedCoords = [];
+            let selectedQuads = [];
 
             visByCheckbox();
 
@@ -128,10 +129,10 @@ window.addEventListener('load', function(){
 
 function visByCheckbox(){
     checkboxes_geo = document.querySelectorAll('input[type=checkbox]');
-    var checkedQuads = [];
+    let checkedQuads = [];
 
-    for(var i=0; i<checkboxes_geo.length; i++){
-        var quad = checkboxes_geo[i].dataset.quad;
+    for(let i=0; i<checkboxes_geo.length; i++){
+        let quad = checkboxes_geo[i].dataset.quad;
 
         //show/hide markers based on checked boxes
         if(checkboxes_geo[i].checked){
@@ -145,7 +146,7 @@ function visByCheckbox(){
 }
 
 function zoomTo(quadArr){
-    var options;
+    let options;
 
     if(quadArr.length === 1){
         options = mapOptions[quadArr[0]];
@@ -174,7 +175,7 @@ function initMap() {
 }
 
 function clearCheckBoxes(){
-    for(var i=0; i<checkboxes_geo.length; i++){
+    for(let i=0; i<checkboxes_geo.length; i++){
         checkboxes_geo[i].checked = false;
     }
 }
@@ -202,7 +203,7 @@ function enable_geoloc(){
         getPlacePhotos();
 
         // check box matching user's geolocation
-        for(var i=0; i<checkboxes_geo.length; i++){
+        for(let i=0; i<checkboxes_geo.length; i++){
 
             if(checkboxes_geo[i].dataset.quad === userQuad){
                 checkboxes_geo[i].checked = true;
@@ -213,7 +214,7 @@ function enable_geoloc(){
                 checkboxes_geo[i].checked = false;
 
                 // hide other quads
-                var quad = checkboxes_geo[i].dataset.quad;
+                let quad = checkboxes_geo[i].dataset.quad;
                 setMapOnAll('hide', getMarkerObjs(quad));
             }
         }
@@ -245,9 +246,9 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos){
     // Anything > lng = E
     //I-205 = lng: -122.565664
 function getQuadrant(){
-    var ns = "S";
-    var ew = "W";
-    var concat;
+    let ns = "S";
+    let ew = "W";
+    let concat;
 
     if(pos.lat > 45.523063){
         ns = "N";
@@ -273,7 +274,7 @@ function getQuadrant(){
 }
 
 function getMarkerObjs(quad){
-    var quadMarkerArr;
+    let quadMarkerArr;
     switch(quad){
         case 'N':
             quadMarkerArr = markerArr_N;
@@ -315,12 +316,12 @@ function getMarkerObjs(quad){
 function convertAllToMarkers(){
     // converts all brunchtrackers to marker objects
 
-    var arr = [];
-    var targetQuadArr;
-    var infowindow = new google.maps.InfoWindow();
+    let arr = [];
+    let targetQuadArr;
+    let infowindow = new google.maps.InfoWindow();
 
-    for(var i=0; i<brunchArr.length; i++){
-        var markerObj = new google.maps.Marker({//user marker
+    for(let i=0; i<brunchArr.length; i++){
+        let markerObj = new google.maps.Marker({//user marker
             position: {lat: brunchArr[i].lat, lng: brunchArr[i].lng},
             map: mapObj,
             optimized: false,
@@ -347,7 +348,7 @@ function convertAllToMarkers(){
 
         // incidentally add marker objects to correct quad arrays
         // get each brunchtracker quad
-        var quad = brunchArr[i].nhd;
+        let quad = brunchArr[i].nhd;
 
         // push corresponding marker object to correct quad array
         targetQuadArr = getMarkerObjs(quad);
@@ -358,7 +359,7 @@ function convertAllToMarkers(){
 
 // Sets the map on all markers in the array.
  function setMapOnAll(vis, markerArr){
-   for(var i=0; i < markerArr.length; i++) {
+   for(let i=0; i < markerArr.length; i++) {
        if(vis === 'show'){
            if(selectedTime){
                if(parseInt(markerArr[i].openTime.replace(':', '')) <= selectedTime){
@@ -374,4 +375,3 @@ function convertAllToMarkers(){
        }
    }
  }
-

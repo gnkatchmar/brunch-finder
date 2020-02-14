@@ -1,6 +1,6 @@
 //Page transitions
 function vis(id, state){
-    var el = document.getElementById(id);
+    let el = document.getElementById(id);
     if(state === 0){
         el.className = 'invisible';
     } else {
@@ -9,7 +9,7 @@ function vis(id, state){
 }
 
 function display(id, state){
-    var el = document.getElementById(id);
+    let el = document.getElementById(id);
     if(state === 0){
         el.className = 'none';
     } else {

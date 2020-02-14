@@ -1,9 +1,9 @@
-var service;
-var geo_enabled = false;
-var active_BrunchArr;
-var brunchArr_Geo = [];
-var imgsFilled = 0;
-var photosObj = {
+let service;
+let geo_enabled = false;
+let active_BrunchArr;
+let brunchArr_Geo = [];
+let imgsFilled = 0;
+let photosObj = {
     global_pId: null,
     indx : null,
     // defining dimensions of images [sm] [md] [lg] [xl]
@@ -19,7 +19,7 @@ function resetPhotosObj(){
 // Utility function
 // Returns a tracker object by Google placeId
 function getTrackerObj(pId){
-    for(var i=0; i<brunchArr.length; i++){
+    for(let i=0; i<brunchArr.length; i++){
         if(brunchArr[i].pId === pId){
             photosObj.indx = i;
             return brunchArr[i];
@@ -29,14 +29,14 @@ function getTrackerObj(pId){
 
 // Utility function
 function getRandom(bounds){
-    var rand = Math.floor(Math.random() * bounds);
+    let rand = Math.floor(Math.random() * bounds);
     return rand;
 }
 
 // Get subset of brunch array that match quadrant
 function getBrunchObjs(quad){
-    var subsetArr = [];
-    for(var i=0; i<brunchArr.length; i++){
+    let subsetArr = [];
+    for(let i=0; i<brunchArr.length; i++){
         if(brunchArr[i].nhd === quad){
             subsetArr.push(brunchArr[i]);
         }
@@ -58,13 +58,13 @@ function getPlacePhotos(){
         brunchArr_Geo = getBrunchObjs(userQuad);
         active_BrunchArr = brunchArr_Geo;
     }
-    var indx = getRandom(active_BrunchArr.length);
-    var placeObj = active_BrunchArr[indx];
+    let indx = getRandom(active_BrunchArr.length);
+    let placeObj = active_BrunchArr[indx];
     
     photosObj.global_pId = placeObj.pId;
     photosObj.indx = indx;
 
-    var request = {
+    let request = {
         placeId: placeObj.pId
     };
 
@@ -77,22 +77,22 @@ function getPlacePhotos(){
 // Fill the photUrls arrays
 function callback(place, status){
     if (status == google.maps.places.PlacesServiceStatus.OK){
-        var photos = place.photos;
-        var url;
-        var urlMasterArr = [];
+        let photos = place.photos;
+        let url;
+        let urlMasterArr = [];
 
         // for each photo size defined above
-        var photoSizes = photosObj.photoSizes;
+        let photoSizes = photosObj.photoSizes;
 
         // for each img size in global, grab 1 image
         // push that to an array
         // put all those in a single array and attach to brunch object as img prop
-        for(var j=0; j<photoSizes.length; j++){
-            var size = photoSizes[j];
-            var sizedArr = [];
-            var maxPics = 5;
+        for(let j=0; j<photoSizes.length; j++){
+            let size = photoSizes[j];
+            let sizedArr = [];
+            let maxPics = 5;
 
-            for(var i=0; i<maxPics; i++){//limt to 2 images
+            for(let i=0; i<maxPics; i++){//limt to 2 images
                 if(photos[i]){
                     url = photos[i].getUrl({'maxWidth':size, 'maxHeight':size});
                 }
@@ -116,22 +116,22 @@ function callback(place, status){
 }
 
 function drawPhotos(brunchObj, size, quantity){
-    var activePhotoUrlArr;
+    let activePhotoUrlArr;
 
-    var indx = photosObj.indx;
-    var website = active_BrunchArr[indx].website;
-    var title = active_BrunchArr[indx].title;
-    var opentime = active_BrunchArr[indx].opentime;
-    var address = active_BrunchArr[indx].address;
-    var photoUrl;
+    let indx = photosObj.indx;
+    let website = active_BrunchArr[indx].website;
+    let title = active_BrunchArr[indx].title;
+    let opentime = active_BrunchArr[indx].opentime;
+    let address = active_BrunchArr[indx].address;
+    let photoUrl;
     if(active_BrunchArr[indx].imgs[1].length > 0){
         photoUrl = active_BrunchArr[indx].imgs[1][getRandom(active_BrunchArr[indx].imgs[1].length)];
     } else {
         photoUrl = active_BrunchArr[getRandom(active_brunchArr.length)].imgs[1][getRandom(active_BrunchArr[indx].imgs[1].length)];
     }
-    var n = imgsFilled+1;
-    var target = 'pic' + n;
-    var container = 'container_img' + imgsFilled;
+    let n = imgsFilled+1;
+    let target = 'pic' + n;
+    let container = 'container_img' + imgsFilled;
 
     document.getElementById(target).innerHTML = "<figure id='" + container + "' class='invisible'><img src='" + photoUrl + "'></figure><figcaption><div class='f-title'>" + brunchObj.title + "</div><div class='f-time'>" + brunchObj.address + "<br>Opens: " + brunchObj.opentime + "</div><div><a href='" + brunchObj.website + "' class='f-site' target='blank'>website</div></figcaption>";
 
@@ -146,20 +146,20 @@ function drawPhotos(brunchObj, size, quantity){
 
 // utility functions
 function addClass(id, newClass){
-    var el = document.getElementById(id);
-    var currentClass = el.className;
+    let el = document.getElementById(id);
+    let currentClass = el.className;
     document.getElementById(id).className = currentClass + " " + newClass;
 }
 
 function removeClass(id, remClass){
-    var el = document.getElementById(id);
-    var currentClass = el.className;
+    let el = document.getElementById(id);
+    let currentClass = el.className;
     document.getElementById(id).className = currentClass.replace(currentClass, remClass).trim();
 }
 
 function replaceClass(id, oldClass, newClass){
-    var el = document.getElementById(id);
-    var currentClass = el.className;
+    let el = document.getElementById(id);
+    let currentClass = el.className;
     document.getElementById(id).className = currentClass.replace(oldClass, newClass).trim();
 }
 

@@ -13,7 +13,7 @@ class brunchtracker {
 }
 
 //change https to http
-var brunchArr = [
+let brunchArr = [
   new brunchtracker("1905", "830 N Shaver St", "N", "9:00 AM", "http://the1905.org", 45.551820, -122.675220, 'ChIJHXqQqmunlVQRSyFCcmcf3AU'),
   new brunchtracker("2 Rivers Bar and Grill", "1700 Main St #110, Washougal", "V", "10:00 AM", "http://2riversbar.com/", 45.578160, -122.353300, 'ChIJMcGBoQa9lVQRLqsIDas6TPc'),
   new brunchtracker("82nd Street Bar and Grill", "5028 SE 82nd Ave", "SE", "9:00 AM", "http://www.yelp.com/biz/82nd-street-bar-and-grill-portland", 45.486097, -122.578478, 'ChIJA8DisDyglVQR6lZdBZjs2wQ'),
@@ -353,7 +353,7 @@ var brunchArr = [
   new brunchtracker("Multnomah Falls Lodge", "53000 E Historic Columbia River Hwy, Corbett", "G", "8:00 AM", "http://www.multnomahfallslodge.com/restaurant", 45.577290, -122.117460, 'ChIJJaYmNh7rlVQRG89iRsrE_XE'),
   new brunchtracker("My Father's Place", "523 SE Grand Ave", "SE", "6:00 AM", "http://myfathersplacepdx.com", 45.519033, -122.660868, 'ChIJVwSCGqeglVQR7NxbQKUascY'),
   new brunchtracker("Natalia's Cafe", "437 NE 4th Ave, Camas", "V", "7:00 AM", "http://natalias-cafe-camas.sites.tablehero.com", 45.588040, -122.399890, 'ChIJv4KNtfG8lVQRKTwY5zrIGYM'),
-  new brunchtracker("Navarre", "10 NE 28th Ave", "NE", "9:30 AM", "http://www.navarreportland.com", 45.523128, -122.63701, 'ChIJqxM-Gb-glVQRI38A12wUxHI'),
+  new brunchtracker("Naletre", "10 NE 28th Ave", "NE", "9:30 AM", "http://www.naletreportland.com", 45.523128, -122.63701, 'ChIJqxM-Gb-glVQRI38A12wUxHI'),
   new brunchtracker("Nayhely's Place", "9106 NE Hwy 99, Vancouver", "V", "8:00 AM", "http://www.yelp.com/biz/nayhelys-place-vancouver", 45.688444, -122.66066, 'ChIJ6yqf9WKulVQRgC6kkJKsCiw'),
   new brunchtracker("Nectar Cafe", "1925 NE 42nd Ave #E", "NE", "8:00 AM", "http://www.nectarcoffeebar.com", 45.536945, -122.620658, 'ChIJu5hMDteglVQRqkkNeXWPapY'),
   new brunchtracker("NEPO 42", "5403 NE 42nd Ave", "NE", "10:00 AM", "http://www.nepo42.com", 45.562142, -122.620786, 'ChIJadG2_MOmlVQRVf-TH0cINsA'),

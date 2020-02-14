@@ -4,177 +4,177 @@ document.getElementById("cboxes").addEventListener("change", getIndex);
 
 function addInfo(currentRestaurant){
 
-    var locationRow = document.createElement("tr");
-    var nameCell = document.createElement("td");
+    let locationRow = document.createElement("tr");
+    let nameCell = document.createElement("td");
     nameCell.innerText = currentRestaurant.title;
     locationRow.appendChild(nameCell);
 
-    var addressCell = document.createElement("td");
+    let addressCell = document.createElement("td");
     addressCell.innerText = currentRestaurant.address;
     locationRow.appendChild(addressCell);
 
-    var websiteAddress = currentRestaurant.website.replace("http://", "").replace("www.", "");
-    var websitePart = websiteAddress.split('/', 2);
+    let websiteAddress = currentRestaurant.website.replace("http://", "").replace("www.", "");
+    let websitePart = websiteAddress.split('/', 2);
 
-    var websiteCell = document.createElement("td");
+    let websiteCell = document.createElement("td");
     //websiteCell.innerHTML = "<a href=" +this.website +" target='_blank'>" + this.website.replace("http://", "") + "</a>";
     websiteCell.innerHTML = "<a href=" +currentRestaurant.website +" target='_blank'>" + websitePart[0] + "</a>";
 
     locationRow.appendChild(websiteCell);
 
-    var table = document.getElementById("restaurantListTable");
+    let table = document.getElementById("restaurantListTable");
     table.appendChild(locationRow);};
 
 function getIndex() {
 
 		// clears table
-		var tableContainer = document.getElementById("restaurantListTable");
+		let tableContainer = document.getElementById("restaurantListTable");
 		tableContainer.innerHTML = "";
 	
-    var selectDropDown = document.getElementById("dropdown");
-		var userSelectTime = selectDropDown.options[selectDropDown.selectedIndex].text;
+    let selectDropDown = document.getElementById("dropdown");
+		let userSelectTime = selectDropDown.options[selectDropDown.selectedIndex].text;
 	
-		// check if x is checked or not, if yes set the variable to "x"
-		var NboxChecked = document.getElementById("cb0").checked;
+		// check if x is checked or not, if yes set the letiable to "x"
+		let NboxChecked = document.getElementById("cb0").checked;
 		if (NboxChecked == true){
-			var NboxTrue = "N";
+			let NboxTrue = "N";
 		}
 
-		var NEboxChecked = document.getElementById("cb1").checked;
+		let NEboxChecked = document.getElementById("cb1").checked;
 		if (NEboxChecked == true){
-			var NEboxTrue = "NE";
+			let NEboxTrue = "NE";
 		}		
 
-		var NWboxChecked = document.getElementById("cb2").checked;
+		let NWboxChecked = document.getElementById("cb2").checked;
 		if (NWboxChecked == true){
-			var NWboxTrue = "NW";
+			let NWboxTrue = "NW";
 		}
 
-		var SEboxChecked = document.getElementById("cb3").checked;
+		let SEboxChecked = document.getElementById("cb3").checked;
 		if (SEboxChecked == true){
-			var SEboxTrue = "SE";
+			let SEboxTrue = "SE";
 		}
 
-		var SWboxChecked = document.getElementById("cb4").checked;
+		let SWboxChecked = document.getElementById("cb4").checked;
 		if (SWboxChecked == true){
-			var SWboxTrue = "SW";
+			let SWboxTrue = "SW";
 		}
 
-		var EboxChecked = document.getElementById("cb5").checked;
+		let EboxChecked = document.getElementById("cb5").checked;
 		if (EboxChecked == true){
-			var EboxTrue = "E";
+			let EboxTrue = "E";
 		}
 
-		var WboxChecked = document.getElementById("cb6").checked;
+		let WboxChecked = document.getElementById("cb6").checked;
 		if (WboxChecked == true){
-			var WboxTrue = "W";
+			let WboxTrue = "W";
 		}
 
-		var SboxChecked = document.getElementById("cb7").checked;
+		let SboxChecked = document.getElementById("cb7").checked;
 		if (SboxChecked == true){
-			var SboxTrue = "S";
+			let SboxTrue = "S";
 		}
 
-		var VboxChecked = document.getElementById("cb8").checked;
+		let VboxChecked = document.getElementById("cb8").checked;
 		if (VboxChecked == true){
-			var VboxTrue = "V";
+			let VboxTrue = "V";
 		}
 
-		var H30boxChecked = document.getElementById("cb9").checked;
+		let H30boxChecked = document.getElementById("cb9").checked;
 		if (H30boxChecked == true){
-			var H30boxTrue = "H30";
+			let H30boxTrue = "H30";
 		}
 	
-		var GboxChecked = document.getElementById("cb10").checked;
+		let GboxChecked = document.getElementById("cb10").checked;
 		if (GboxChecked == true){
-			var GboxTrue = "G";
+			let GboxTrue = "G";
 		}
 
 		// if x is selected print out x restaurants
-		for (var index = 0; index < brunchArr.length; index++) {
-				var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === NboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				var currentRestaurant = brunchArr[index];
+				let currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
 		}
 
-		for (var index = 0; index < brunchArr.length; index++) {
-				var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === NEboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				var currentRestaurant = brunchArr[index];
+				let currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
 		}
 
-		for (var index = 0; index < brunchArr.length; index++) {
-				var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === NWboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				var currentRestaurant = brunchArr[index];
+				let currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
 		}
 	
-		for (var index = 0; index < brunchArr.length; index++) {
-				var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === SEboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				var currentRestaurant = brunchArr[index];
+				let currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
 		}
 
-		for (var index = 0; index < brunchArr.length; index++) {
-				var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === SWboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				var currentRestaurant = brunchArr[index];
+				let currentRestaurant = brunchArr[index];
 				addInfo(currentRestaurant);
 			}
 		}
 
-		for (var index = 0; index < brunchArr.length; index++) {
-			var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+			let brunchArrTime = brunchArr[index].opentime;
 			if (brunchArr[index].nhd === EboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-			var currentRestaurant = brunchArr[index];
+			let currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
 		}
 
-		for (var index = 0; index < brunchArr.length; index++) {
-			var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+			let brunchArrTime = brunchArr[index].opentime;
 			if (brunchArr[index].nhd === WboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-			var currentRestaurant = brunchArr[index];
+			let currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
 		}
 
-		for (var index = 0; index < brunchArr.length; index++) {
-			var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+			let brunchArrTime = brunchArr[index].opentime;
 			if (brunchArr[index].nhd === SboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-			var currentRestaurant = brunchArr[index];
+			let currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
 		}	
 
-		for (var index = 0; index < brunchArr.length; index++) {
-			var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+			let brunchArrTime = brunchArr[index].opentime;
 			if (brunchArr[index].nhd === VboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-			var currentRestaurant = brunchArr[index];
+			let currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
 		}
 	
-		for (var index = 0; index < brunchArr.length; index++) {
-			var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+			let brunchArrTime = brunchArr[index].opentime;
 			if (brunchArr[index].nhd === H30boxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-			var currentRestaurant = brunchArr[index];
+			let currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
 		}
 
-		for (var index = 0; index < brunchArr.length; index++) {
-			var brunchArrTime = brunchArr[index].opentime;
+		for (let index = 0; index < brunchArr.length; index++) {
+			let brunchArrTime = brunchArr[index].opentime;
 			if (brunchArr[index].nhd === GboxTrue && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-			var currentRestaurant = brunchArr[index];
+			let currentRestaurant = brunchArr[index];
 			addInfo(currentRestaurant);
 			}
 		}			
