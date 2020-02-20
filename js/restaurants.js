@@ -558,5 +558,12 @@ let brunchArr = [
   new brunchtracker("Zeus Cafe", "303 SW 12th Ave", "SW", "7:00 AM", "http://www.mcmenamins.com/crystal-hotel/zeus-cafe", 45.522790, -122.683400, 'ChIJGzEqBwMKlVQRhuRmbWk8LkY'),
   new brunchtracker("Zigzag Inn", "70162 E Hwy 26, Welches", "E", "7:00 AM", "http://www.zigzaginn.com", 45.343617, -121.943068, 'ChIJdYyyVH6KlVQRVLp2f2r7Jy8'),
   new brunchtracker("Zigzag Mountain Store & Cafe", "70171 E Hwy 26, Rhododendron", "E", "6:00 AM", "http://www.yelp.com/biz/zigzag-mountain-store-and-cafe-rhododendron", 45.344158, -121.943110, 'ChIJG21OQ36KlVQR2xfM-S1FWuo'),
-  new brunchtracker("Zim's Brau Haus Restaurant & Sports Bar", "604 E 2nd St, The Dalles", "G", "7:00 AM", "http://zimsbrauhaus.com", 45.599425, -121.177949, 'ChIJTZwfnHMellQRrNAiZ6WoR0U')
+  new brunchtracker("Zim's Brau Haus Restaurant & Sports Bar", "604 E 2nd St, The Dalles", "G", "7:00 AM", "http://zimsbrauhaus.com", 45.599425, -121.177949, 'ChIJTZwfnHMellQRrNAiZ6WoR0U'),
+  new brunchtracker("Astoria Coffeehouse & Bistro", "243 11th St #4114, Astoria", "C", "7:00 AM", "http://astoriacoffeehouse.com", 46.189502, -123.831725, 'ChIJ-eoiLUp7k1QR1YObPvj-lxw'),
+  new brunchtracker("Bayway Eatery", "35845 7th St, Nehalem", "C", "7:00 AM", "http://www.yelp.com/biz/bayway-eatery-nehalem", 45.717061, -123.894169, 'ChIJDyKDz9bJlFQRrT8EvExk2Oo'),
+  new brunchtracker("Blue Agate Cafe", "1610 Pacific Ave, Oceanside", "C", "8:00 AM", "http://www.yelp.com/biz/blue-agate-cafe-oceanside", 45.460583, -123.969564, 'ChIJp2aEYt0u61QRpfzkW8L7UH0'),
+  new brunchtracker("Blue Scorcher Bakery & Café", "1493 Duane St, Astoria", "C", "7:00 AM", "http://www.bluescorcher.coop/cafe", 46.188565, -123.827504, 'ChIJuxw-S0l7k1QRrqZFSOXxvkw'),
+  new brunchtracker("Bunkhouse Restaurant", "36315 US-101, Nehalem", "C", "8:00 AM", "http://www.yelp.com/biz/bunk-house-restaurant-nehalem", 45.717271, -123.91111, 'ChIJezRbuSC2lFQRBnLQDIyp7Jk'),
+  new brunchtracker("Cafe on Hawk Creek", "4505 Salem Ave, Neskowin", "C", "8:00 AM", "http://www.cafeonhawkcreek.com/home", 45.102884, -123.982423, 'ChIJMaikpGDp6lQR-mPrmCnHNoI'),
+  new brunchtracker("Cafe Stephanie", "411 NW Coast St, Newport", "C", "7:30 AM", "http://www.yelp.com/biz/cafe-stephanie-newport", 44.639182, -124.060653, 'ChIJrbk9Q8zXwVQRlaOKqJT25ss') 
 ];
