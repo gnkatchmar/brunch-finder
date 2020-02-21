@@ -565,5 +565,14 @@ let brunchArr = [
   new brunchtracker("Blue Scorcher Bakery & Café", "1493 Duane St, Astoria", "C", "7:00 AM", "http://www.bluescorcher.coop/cafe", 46.188565, -123.827504, 'ChIJuxw-S0l7k1QRrqZFSOXxvkw'),
   new brunchtracker("Bunkhouse Restaurant", "36315 US-101, Nehalem", "C", "8:00 AM", "http://www.yelp.com/biz/bunk-house-restaurant-nehalem", 45.717271, -123.91111, 'ChIJezRbuSC2lFQRBnLQDIyp7Jk'),
   new brunchtracker("Cafe on Hawk Creek", "4505 Salem Ave, Neskowin", "C", "8:00 AM", "http://www.cafeonhawkcreek.com/home", 45.102884, -123.982423, 'ChIJMaikpGDp6lQR-mPrmCnHNoI'),
-  new brunchtracker("Cafe Stephanie", "411 NW Coast St, Newport", "C", "7:30 AM", "http://www.yelp.com/biz/cafe-stephanie-newport", 44.639182, -124.060653, 'ChIJrbk9Q8zXwVQRlaOKqJT25ss') 
+  new brunchtracker("Cafe Stephanie", "411 NW Coast St, Newport", "C", "7:30 AM", "http://www.yelp.com/biz/cafe-stephanie-newport", 44.639182, -124.060653, 'ChIJrbk9Q8zXwVQRlaOKqJT25ss'),
+  new brunchtracker("Camp 18 Restaurant", "42362 US-26, Seaside", "C", "8:00 AM", "http://www.camp18restaurant.com", 45.88664, -123.614245, 'ChIJhySCuxaUlFQRfUx6y80aE_4'),
+  new brunchtracker("Columbian Cafe", "1114 Marine Dr, Astoria", "C", "9:00 AM", "http://www.yelp.com/biz/columbian-cafe-astoria-3", 46.189694, -123.831423, 'ChIJ26XBKkp7k1QRoY9ALcdYxFM'),
+  new brunchtracker("Cowbell Cafe", "194 S US-101, Rockaway Beach", "C", "8:00 AM", "http://www.yelp.com/biz/cowbell-cafe-rockaway-beach", 45.611629, -123.944103, 'ChIJ0aSDvKXMlFQRDACIBwIdpBI'),
+  new brunchtracker("Crepe Neptune", "175 E 2nd St, Cannon Beach", "C", "8:00 AM", "http://crepeneptune.com", 45.898332, -123.958214, 'ChIJUa9NVu-klFQR38hMSsZYkWI'),
+  new brunchtracker("Denny's (24 hours)", "2230 N Main Ave, Tillamook", "C", "12:00 AM", "http://locations.dennys.com/OR/TILLAMOOK/248113", 45.472836, -123.844257, 'ChIJr4VV5Hkr61QRwbJfuoiw500'),
+  new brunchtracker("Downie's Cafe", "9320 5th St, Bay City", "C", "6:30 AM", "http://www.yelp.com/biz/downies-cafe-bay-city", 45.524124, -123.889169, 'ChIJk4Jk8BYt61QRFhqwKuCxM5s'),
+  new brunchtracker("Dundee's Bar & Grill", "414 Broadway St, Seaside", "C", "7:00 AM", "http://dundeesseaside.com", 46.028043, -123.912951, 'ChIJiagoHLyhlFQR0zuZcMxWG8'),
+  new brunchtracker("Dutch Mill Diner", "206 Main Ave, Tillamook", "C", "7:00 AM", "http://dutchmilldiner.com", 45.456779, -123.843916, 'ChIJBTRKgqMr61QRYsHQYveOPwg'),
+  new brunchtracker("Fern Restaurant & Lounge", "1000 N Main Ave #2, Tillamook", "C", "7:00 AM", "http://www.yelp.com/biz/fern-restaurant-and-lounge-tillamook", 45.463653, -123.844428, 'ChIJzUFIdbAr61QRjAkeOTLyBzM')             
 ];
