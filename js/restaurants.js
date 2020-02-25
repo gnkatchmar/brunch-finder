@@ -587,5 +587,15 @@ let brunchArr = [
   new brunchtracker("Meridian Restaurant & Bar", "33000 Cape Kiwanda Dr, Cloverdale", "NC", "8:00 AM", "http://headlandslodge.com/dining/meridian", 45.216575, -123.969865, 'ChIJlWiTbRDd6lQRUCDpadOkpKU'),
   new brunchtracker("Monte Alban", "2975 Marine Dr, Astoria", "NC", "10:00 AM", "http://www.yelp.com/biz/montealban-astoria", 46.190303, -123.811097, 'ChIJTUM2akN7k1QRtFmVjSJ50zg'),
   new brunchtracker("Morris' Fireside Restaurant", "100 E 2nd St, Cannon Beach", "NC", "8:00 AM", "http://www.cannon-beach.net/morrisfireside", 45.898332, -123.958214, 'ChIJRZ9KVu-klFQReISlV51QitI'),
-  new brunchtracker("Ocean Bakery Cafe", "414 N Prom, Seaside", "NC", "7:00 AM", "http://www.oceanviewresort.com/dining-restaurants", 45.993121, -123.920655, 'ChIJFxrQlbmhlFQRqKGJVUwf8CQ')    
+  new brunchtracker("Ocean Bakery Cafe", "414 N Prom, Seaside", "NC", "7:00 AM", "http://www.oceanviewresort.com/dining-restaurants", 45.993121, -123.920655, 'ChIJFxrQlbmhlFQRqKGJVUwf8CQ'),
+  new brunchtracker("Offshore Grill & Coffee House", "122 N US-101, Rockaway Beach", "NC", "7:00 AM", "http://www.yelp.com/biz/offshore-grill-and-coffee-house-rockaway-beach", 45.613642, -123.943762, 'ChIJhXQdtqXMlFQRa0e9aE1seOk'),
+  new brunchtracker("Osprey Cafe", "2281 Beach Dr #5117, Seaside", "NC", "7:30 AM", "http://www.yelp.com/biz/osprey-caf%C3%A9-seaside-4", 45.980502, -123.933086, 'ChIJNeGQ2p2hlFQRXOLgoreidZY'),
+  new brunchtracker("Parkside Restaurant and Lounge", "231 Garibaldi Ave, Garibaldi", "NC", "7:00 AM", "http://www.yelp.com/biz/parkside-restaurant-and-lounge-garibaldi", 45.559496, -123.910119, 'ChIJq_Oz9LAy61QRYAMBvjaJixU'),
+  new brunchtracker("Pig 'N Pancake", "223 S Hemlock St, Cannon Beach", "NC", "7:00 AM", "http://www.pignpancake.com/cannon-beach.html", 45.895382, -123.961517, 'ChIJyz4ImOaklFQRWdpEeIz1fJs'),
+  new brunchtracker("Pig 'N Pancake", "146 Bond St, Astoria", "NC", "6:00 AM", "http://www.pignpancake.com/astoria.html", 46.189891, -123.841316, 'ChIJj4U1U8pkk1QRUvL27Lbdm9U'),
+  new brunchtracker("Pig 'N Pancake", "323 Broadway St, Seaside", "NC", "6:00 AM", "http://www.pignpancake.com/seaside.html", 45.9932, -123.926031, 'ChIJaYXrGbyhlFQRkNKpWvb2dls'),
+  new brunchtracker("Pirate's Cove Restaurant", "14170 US-101 Ave N, Garibaldi", "NC", "8:00 AM", "http://piratescoverestaurant.com", 45.559227, -123.927741, 'ChIJhbSprb8y61QRme4ST3RirQU'),
+  new brunchtracker("Rendezvous Bar & Grill", "214 Pacific Ave, Tillamook", "NC", "7:00 AM", "http://www.rendezvousbarandgrill.com", 45.456748, -123.843137, 'ChIJcxY8eKQr61QR3PrL9nqJKUg'),
+  new brunchtracker("Riley's Restaurant & Lounge", "1104 S Holladay Dr, Seaside", "NC", "8:00 AM", "http://www.yelp.com/biz/rileys-restaurant-and-lounge-seaside", 45.986912, -123.923726, 'ChIJpXRHn5ehlFQRemXcfRGPsjo'),
+  new brunchtracker("Sea Breeze Restaurant & Lounge", "84774 US-101, Seaside", "NC", "7:00 AM", "http://www.yelp.com/biz/sea-breeze-restaurant-seaside", 45.993121, -123.920655, 'ChIJ3Uqrr9ajlFQRgdKKw_nzUDE')                        
 ];
