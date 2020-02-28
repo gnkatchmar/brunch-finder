@@ -16,13 +16,14 @@ let markerArr_S = [];
 let markerArr_V = [];
 let markerArr_H30 = [];
 let markerArr_G = [];
+let markerArr_NC = [];
 let selectedTime;
 let infoWindow;
 
 //"higher" negative lng value means center more to the left
 let mapOptions = {
     cityCenter: {
-        coords: {lat: 45.56, lng: -122.6},
+        coords: {lat: 45.68, lng: -122.6},
         zoom: 8
     },
     N: {
@@ -68,6 +69,10 @@ let mapOptions = {
     G: {
         coords: {lat: 45.70, lng: -121.8},
         zoom: 10
+    },
+    NC: {
+        coords: {lat: 45.68, lng: -123.6},
+        zoom: 8
     },
 };
 
@@ -309,6 +314,9 @@ function getMarkerObjs(quad){
         case 'G':
             quadMarkerArr = markerArr_G;
         break;
+        case 'NC':
+            quadMarkerArr = markerArr_NC;
+        break;
     }
     return quadMarkerArr;
 }
@@ -317,7 +325,7 @@ function convertAllToMarkers(){
     // converts all brunchtrackers to marker objects
 
     let arr = [];
-    let targetQuadArr;
+    let targetQuadArr = [];
     let infowindow = new google.maps.InfoWindow();
 
     for(let i=0; i<brunchArr.length; i++){

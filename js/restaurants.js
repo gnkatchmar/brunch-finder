@@ -565,7 +565,6 @@ let brunchArr = [
   new brunchtracker("Blue Scorcher Bakery & Café", "1493 Duane St, Astoria", "NC", "7:00 AM", "http://www.bluescorcher.coop/cafe", 46.188565, -123.827504, 'ChIJuxw-S0l7k1QRrqZFSOXxvkw'),
   new brunchtracker("Bunkhouse Restaurant", "36315 US-101, Nehalem", "NC", "8:00 AM", "http://www.yelp.com/biz/bunk-house-restaurant-nehalem", 45.717271, -123.91111, 'ChIJezRbuSC2lFQRBnLQDIyp7Jk'),
   new brunchtracker("Cafe on Hawk Creek", "4505 Salem Ave, Neskowin", "NC", "8:00 AM", "http://www.cafeonhawkcreek.com/home", 45.102884, -123.982423, 'ChIJMaikpGDp6lQR-mPrmCnHNoI'),
-  new brunchtracker("Cafe Stephanie", "411 NW Coast St, Newport", "NC", "7:30 AM", "http://www.yelp.com/biz/cafe-stephanie-newport", 44.639182, -124.060653, 'ChIJrbk9Q8zXwVQRlaOKqJT25ss'),
   new brunchtracker("Camp 18 Restaurant", "42362 US-26, Seaside", "NC", "8:00 AM", "http://www.camp18restaurant.com", 45.88664, -123.614245, 'ChIJhySCuxaUlFQRfUx6y80aE_4'),
   new brunchtracker("Columbian Cafe", "1114 Marine Dr, Astoria", "NC", "9:00 AM", "http://www.yelp.com/biz/columbian-cafe-astoria-3", 46.189694, -123.831423, 'ChIJ26XBKkp7k1QRoY9ALcdYxFM'),
   new brunchtracker("Cowbell Cafe", "194 S US-101, Rockaway Beach", "NC", "8:00 AM", "http://www.yelp.com/biz/cowbell-cafe-rockaway-beach", 45.611629, -123.944103, 'ChIJ0aSDvKXMlFQRDACIBwIdpBI'),
@@ -603,5 +602,5 @@ let brunchArr = [
   new brunchtracker("Village Coffee Shoppe", "34910 Brooten Rd, Cloverdale", "NC", "7:00 AM", "http://www.villagecoffeeshoppe.com", 45.202764, -123.961895, 'ChIJ56tNeTnd6lQRcYODgZ-uUtU'),
   new brunchtracker("Wanda's Cafe + Bakery", "12880 H St, Nehalem", "NC", "8:00 AM", "http://www.yelp.com/biz/wandas-cafe-bakery-nehalem-2", 45.71767, -123.896536, 'ChIJbToBANfJlFQRh823ZdCwngo'),
   new brunchtracker("Wayfarer Restaurant and Lounge", "1190 Pacific Dr, Cannon Beach", "NC", "8:00 AM", "http://wayfarer-restaurant.com", 45.889488, -123.963015, 'ChIJJUTB79-klFQRYt5ZQbnLmlI'),
-  new brunchtracker("Yolk", "503 Laneda Ave, Manzanita", "NC", "8:00 AM", "http://www.yelp.com/biz/yolk-breakfast-manzanita", 45.719015, -123.933191, 'ChIJgVKiphC2lFQRJFIWbuHl_Z4')  
+  new brunchtracker("Yolk", "503 Laneda Ave, Manzanita", "NC", "8:00 AM", "http://www.yelp.com/biz/yolk-breakfast-manzanita", 45.719015, -123.933191, 'ChIJgVKiphC2lFQRJFIWbuHl_Z4') 
 ];
