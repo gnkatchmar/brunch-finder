@@ -163,7 +163,7 @@ let brunchArr = [
   new brunchtracker("Denny's (24 hours)", "1710 W 6th Ave, The Dalles", "G", "1:00 AM", "http://locations.dennys.com/OR/THE-DALLES/246807", 45.610142, -121.205766, 'ChIJA_Gk3yocllQRRRVeY41WuPw'),
   new brunchtracker("Derby", "8237 N Denver Ave", "N", "8:00 AM", "http://www.yelp.com/biz/derby-portland-5", 45.582953, -122.687194, 'ChIJ7aoi9RCnlVQR1x29mUlAXkI'),
   new brunchtracker("Diane's Restaurant", "5052 SE Foster Rd", "SE", "7:00 AM", "http://www.yelp.com/biz/dianes-restaurant-portland", 45.496333, -122.610411, 'ChIJIQ919WWglVQRmSqwbK7V5bE'),
-  new brunchtracker("Diversity Cafe", "2104 Main St, Forest Cafe", "W", "7:00 AM", "http://www.diversitycandc.com", 45.525980, -123.112000, 'ChIJVVVVVaQalVQRY130IGkW3tE'),
+  new brunchtracker("Diversity Cafe", "2104 Main St, Forest Grove", "W", "7:00 AM", "http://www.diversitycandc.com", 45.525980, -123.112000, 'ChIJVVVVVaQalVQRY130IGkW3tE'),
   new brunchtracker("Dockside Saloon & Restaurant", "2047 NW Front Ave", "NW", "7:00 AM", "http://www.docksidesaloon.com", 45.537709, -122.688510, 'ChIJuRhRnVinlVQRUXDeyiWrP4I'),
   new brunchtracker("Dot's", "2521 SE Clinton St", "SE", "10:00 AM", "http://dotscafeportland.com", 45.503465, -122.639862, 'ChIJOXpGzYOglVQR5PrsyWcnsVM'),
   new brunchtracker("Dóttir", "100 NE Martin Luther King Jr Blvd", "NE", "7:00 AM", "http://kexhotels.com/eat-drink/dottir", 45.523824, -122.661767, 'ChIJfYL783WhlVQRbsXJKGitVvI'),
