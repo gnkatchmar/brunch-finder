@@ -15,14 +15,20 @@ function addInfo(currentRestaurant){
 
     let websiteAddress = currentRestaurant.website.replace("http://", "").replace("www.", "");
     let websitePart = websiteAddress.split('/', 2);
-
     let websiteCell = document.createElement("td");
     websiteCell.innerHTML = "<a href=" +currentRestaurant.website +" target='_blank'>" + websitePart[0] + "</a>";
-
     locationRow.appendChild(websiteCell);
 
     let table = document.getElementById("restaurantListTable");
-    table.appendChild(locationRow);};
+		table.appendChild(locationRow);
+	};
+
+function addRestaurant(index){
+	let currentRestaurant = brunchArr[index];
+	addInfo(currentRestaurant);
+}
+		
+
 
 function getIndex() {
 
@@ -31,16 +37,15 @@ function getIndex() {
 		tableContainer.innerHTML = "";
 	
     let selectDropDown = document.getElementById("dropdown");
-		let userSelectTime = selectDropDown.options[selectDropDown.selectedIndex].text;
+		let userSelectTime = selectDropDown.options[selectDropDown.selectedIndex].text;		
 
 		// if x is selected print out x restaurants
 		if (document.getElementById("cb0").checked == true){
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "N" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -48,9 +53,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "NE" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -58,9 +62,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "NW" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -68,9 +71,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "SE" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -78,9 +80,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "SW" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -88,9 +89,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "E" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -98,9 +98,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "W" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -108,9 +107,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "S" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -118,9 +116,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "V" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -128,9 +125,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "H30" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -138,9 +134,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "G" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
@@ -148,9 +143,8 @@ function getIndex() {
 			for (let index = 0; index < brunchArr.length; index++) {
 				let brunchArrTime = brunchArr[index].opentime;
 				if (brunchArr[index].nhd === "NC" && parseInt(userSelectTime.replace(":", "")) >= parseInt(brunchArrTime.replace(":", ""))) {
-				let currentRestaurant = brunchArr[index];
-				addInfo(currentRestaurant);
-			}
+					addRestaurant(index);
+				}
 		}
 		}
 
