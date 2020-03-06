@@ -32,7 +32,6 @@ function getIndex() {
 	let userSelectTime = selectDropDown.options[selectDropDown.selectedIndex].text;		
 
 	// cycle through neighborhood checkboxes; print if checked
-	let nhds = ["N", "NE", "NW", "SE", "SW", "E", "W", "S", "V", "H30", "G", "NC"];
 	for (index = 0; index < nhds.length; index++) { 
 		if (document.getElementById("cb" + index).checked == true) {
 			for (let x = 0; x < brunchArr.length; x++) {

@@ -1,16 +1,18 @@
 //object constructor
 class brunchtracker {
-    constructor(title, address, nhd, opentime, website, lat, lng, placeId) {
-        this.title = title;
-        this.address = address;
-        this.nhd = nhd;
-        this.opentime = opentime;
-        this.website = website;
-        this.lat = lat;
-        this.lng = lng;
-        this.pId = placeId;
-    }
+  constructor(title, address, nhd, opentime, website, lat, lng, placeId) {
+    this.title = title;
+    this.address = address;
+    this.nhd = nhd;
+    this.opentime = opentime;
+    this.website = website;
+    this.lat = lat;
+    this.lng = lng;
+    this.pId = placeId;
+  }
 }
+
+let nhds = ["N", "NE", "NW", "SE", "SW", "E", "W", "S", "V", "H30", "G", "NC"];
 
 //change https to http
 let brunchArr = [
@@ -150,7 +152,7 @@ let brunchArr = [
   new brunchtracker("Daily Cafe", "902 NW 13th Ave", "NW", "9:00 AM", "http://dailyinthepearl.com", 45.529527, -122.684097, 'CChIJl_xnlP4JlVQR1YWPwzP-bug'),
   new brunchtracker("Daily Feast", "837 SW 11th Ave", "SW", "9:00 AM", "http://thedailyfeastpdx.com/menu-1", 45.519117, -122.683970, 'ChIJIaCrSBsKlVQRdJ8rikNVubM'),
   new brunchtracker("Daily Planet", "11312 SE Powell Blvd", "E", "8:00 AM","http://www.dailyplanetpdx.com", 45.496471, -122.546664, 'ChIJz-505c-hlVQRZA9MhXQI1ZM'),
-  new brunchtracker("Daisy Cafe", "1465 NE Prescott St Ste F", "NE", "8:00 AM","http://www.daisypdx.com", 45.555660, -122.650420, 'ChIJPbxHyEenlVQReY3YBVXW0Xg'),
+  new brunchtracker("Daisy Cafe", "1465 NE Prescott St #F", "NE", "8:00 AM","http://www.daisypdx.com", 45.555660, -122.650420, 'ChIJPbxHyEenlVQReY3YBVXW0Xg'),
   new brunchtracker("Dea's In & Out", "755 NE Burnside Rd, Gresham", "E", "6:30 AM", "http://www.deasburgers.com", 45.507397, -122.423215, 'ChIJtVswNWGYlVQREDrUsCe2gvA'),
   new brunchtracker("Dean’s Homestyle Cafe", "15730 SE 130th Ave, Clackamas", "E", "7:30 AM", "http://www.yelp.com/biz/deans-homestyle-cafe-clackamas", 45.408731, -122.529833, 'ChIJtSBZXf51lVQR8Nvf2CUdWRc'),
   new brunchtracker("Delta Cafe", "4607 SE Woodstock", "SE", "9:00 AM", "http://www.deltacafepdx.com", 45.479384, -122.615186, 'ChIJqUwTs6AKlVQR3yka_MCVlDU'),
