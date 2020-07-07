@@ -319,6 +319,7 @@ let brunchArr = [
   new brunchtracker("Little T American Baker", "2600 SE Division St", "SE", "8:00 AM", "http://littletbaker.com/division", 45.504668, -122.639392, 'ChIJFWqwooOglVQRY2BkWFcTXu8'),
   new brunchtracker("Local 66 Bar and Grill", "6618 SE Powell Blvd", "SE", "10:00 AM", "http://www.local66bar.com", 45.497240, -122.594962, 'ChIJmXBPyEOglVQRsF6SkDXuDxw'),
   new brunchtracker("Lovely Rita", "15 NW 4th Ave", "NW", "7:00 AM", "http://thehoxton.com/oregon/portland/restaurants-and-bars/lovely-rita", 45.523320, -122.674820, 'ChIJWUIDt28LlVQRoLWiYiTatT8'),
+  new brunchtracker("Lydia's Lounge", "18330 E Burnside St", "E", "10:30 AM", "http://www.yelp.com/biz/lydias-lounge-portland", 45.521644, -122.474451, 'ChIJLQUEW26ilVQRwi_g7pCNvDE'),
   new brunchtracker("Lugano Cafe & Catering", "18041 SW Lower Boones Ferry Rd, Tigard", "W", "8:00 AM", "http://www.luganocafecatering.com", 45.391713, -122.751278, 'ChIJd1Gu7-xylVQR5wCwuq9_Gtk'),
   new brunchtracker("M & M Restaurant and Lounge", "137 N Main Ave, Gresham", "E", "6:00 AM", "http://www.yelp.com/biz/m-and-m-restaurant-and-lounge-gresham", 45.498891, -122.431123, 'ChIJ26jZfPOYlVQR9Ku7JJ2F7v4'),
   new brunchtracker("Manzana Rotisserie Grill", "305 1st St, Lake Oswego", "S", "9:00 AM", "http://manzanagrill.com", 45.418146, -122.663737, 'ChIJW6EUhpp0lVQRWpur_l2_L78'),
