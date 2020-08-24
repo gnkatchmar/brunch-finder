@@ -309,6 +309,8 @@ function convertAllToMarkers(){
   let targetQuadArr = [];
   let infowindow = new google.maps.InfoWindow();
 
+  console.log(brunchArr);
+
   for(let i=0; i<brunchArr.length; i++){
     let markerObj = new google.maps.Marker({//user marker
       position: {lat: brunchArr[i].lat, lng: brunchArr[i].lng},
