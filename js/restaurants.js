@@ -218,7 +218,7 @@ let brunchArr = [
   new brunchtracker("Gonzalez Taqueria Y Panaderia", "619 E 1st St, Newberg", "W", "9:00 AM", "http://www.yelp.com/biz/gonzalez-panaderia-y-taqueria-newberg", 45.300290, -122.968560, 'ChIJc6mtVdFBlVQRf_T8H2YcVbI'),
   new brunchtracker("Good Earth Cafe (Saturdays only)", "1139 SW 3rd Ave", "SW", "8:00 AM", "http://www.thegoodearthcafe.com", 45.515316, -122.677127, 'ChIJp_Crmg8KlVQRz84lU3GElYE'),
   new brunchtracker("Gracie's Restaurant", "729 SW 15th Ave", "SW", "7:00 AM", "http://www.hoteldeluxeportland.com/eat-drink/gracies", 45.520919, -122.687833, 'ChIJ1_4w5hwKlVQRn83HvScauNQ'),
-  new brunchtracker("Grain & Gristle", "1473 NE Prescott St", "NE", "10:00 AM", "htts://www.grainandgristle.com/", 45.555453, -122.650147, 'ChIJ6yReRyKnlVQRgxGPSo3xAZI'),
+  new brunchtracker("Grain & Gristle", "1473 NE Prescott St", "NE", "10:00 AM", "http://www.grainandgristle.com/", 45.555453, -122.650147, 'ChIJ6yReRyKnlVQRgxGPSo3xAZI'),
   new brunchtracker("Gramma's Corners Restaurant", "10880 SE McLoughlin Blvd, Milwaukie", "S", "7:00 AM", "http://grammascornerkitchen.com", 45.444095, -122.641968, 'ChIJwVXoAth0lVQRg6V-EptIYOg'),
   new brunchtracker("Grand Army Tavern", "901 NE Oneonta St", "NE", "9:00 AM", "http://www.grandarmytavern.com", 45.571779, -122.656777, 'ChIJET8ebP6mlVQRCKNbgUnoSBw-EptIYOg'),
   new brunchtracker("Grand Central Restaurant & Bowling Lounge", "808 SE Morrison St", "SE", "10:00 AM", "http://www.thegrandcentralbowl.com", 45.516842, -122.657197, 'ChIJN0xYJ6GglVQR4TxlsuuxIXs'),
