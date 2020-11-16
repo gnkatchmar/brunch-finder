@@ -528,7 +528,7 @@ let brunchArr = [
   new brunchtracker("Waiting Room (Sundays only)", "2327 NW Kearney", "NW", "10:00 AM", "http://www.thewaitingroompdx.com", 45.529285, -122.699229, 'ChIJ3xjtRfAJlVQR4YHbyDga_-Q'),
   new brunchtracker("Warehouse 23", "100 Columbia St #102, Vancouver", "V", "10:00 AM", "http://www.warehouse1923.com", 45.621821, -122.675379, 'ChIJZx5ww6SolVQRvdarUst8ypc'),
   new brunchtracker("Warren Country Inn", "56575 Columbia River Hwy, Warren", "H30", "7:00 AM", "http://www.warrencountryinnor.com", 45.816870, -122.850752, 'ChIJS1PQW4lRlFQRlL1UE78zp8A'),
-  new brunchtracker("Water Avenue Coffee", "1028 SE Water Ave", "SE", "7:00 AM", "http://wateravenuecoffee.com", 45.515323, -122.665519, 'ChIJ8XIZ2AsKlVQRiDRF4AULtrQ'),
+  new brunchtracker("Water Avenue Coffee", "1028 SE Water Ave", "SE", "7:00 AM", "http://wateravenuecoffee.com", 45.515323, -122.665519, 'ChIJ8XIZ2AsKlVQRiDRF4AULtrQ',
 'ChIJN60LzetylVQRnt1v0E1_GHc'),
   new brunchtracker("Weinhard Grill", "812 Main St, Oregon City", "S", "9:00 AM", "http://weinhardgrill.com", 45.358489, -122.606870, 'ChIJWYaA4jRxlVQR3svuiWwUrRE'),
   new brunchtracker("Wichita Bar & Grill", "19140 Molalla Ave, Oregon City", "S", "7:00 AM", "http://www.yelp.com/biz/wichita-bar-and-grill-oregon-city", 45.329357, -122.584334, 'ChIJaXkShMhwlVQReQCLMnLiRLg'),
