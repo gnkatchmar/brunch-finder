@@ -170,7 +170,7 @@ let brunchArr = [
   new brunchtracker("Gravy", "3957 N Mississippi Ave", "N", "8:00 AM", "http://gravyrestaurant.com", 45.551708, -122.675706, 'ChIJr8AyrWunlVQR_w411-qtqkw'),
   new brunchtracker("Gravy", "3101 NE Sandy Blvd", "NE", "8:00 AM", "http://gravyrestaurant.com", 45.531069, -122.632717, 'ChIJh4Va9MWglVQRGL1BFAxKZFw'),
   new brunchtracker("Gray's at the Park", "301 W 6th St, Vancouver", "V", "6:30 AM", "http://www.graysatthepark.com", 45.625067, -122.67449, 'ChIJzwR4kLqolVQRKQ6DuKoup7E'),
-  new brunchtracker("Grits N' Gravy", "215 SW 6th Ave", "SE", "7:00 AM", "http://gritsngravypdx.com", 45.522220, -122.676970, 'ChIJpRKOksYLlVQRMwUyLJfZ_PU'),
+  new brunchtracker("Grits N' Gravy", "215 SW 6th Ave", "SW", "7:00 AM", "http://gritsngravypdx.com", 45.522220, -122.676970, 'ChIJpRKOksYLlVQRMwUyLJfZ_PU'),
   new brunchtracker("Grove Restaurant & Bar", "15300 SE McLoughlin Blvd, Oak Grove", "S", "8:00 AM", "http://www.thegroverestaurantbar.com", 45.412433, -122.628713, 'ChIJGS5DpF50lVQRsE3FSQDniDs'),
   new brunchtracker("Guilder", "2393 NE Fremont St", "NE", "8:00 AM", "http://www.guildercafe.com", 45.548248, -122.641178, 'ChIJ5VLGFC-nlVQRAAWf2XIbujM'),
   new brunchtracker("Ha VL", "2738 SE 82nd Ave #102", "SE", "8:00 AM", "http://www.yelp.com/biz/ha-vl-sandwiches-portland", 45.502691, -122.578286, 'ChIJ0YvmPUyglVQRQlRY5M4-h7c'),
