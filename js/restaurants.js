@@ -193,7 +193,7 @@ let brunchArr = [
   new brunchtracker("HopCity Tavern + Market", "921 SW 6th Ave", "SW", "7:00 AM", "http://www3.hilton.com/en/hotels/oregon/hilton-portland-downtown-PDXPHHH/dining/index.html", 45.517684, -122.679358, 'ChIJ06PONwUKlVQRi0d7AQ5v6AQ'),
   new brunchtracker("Hops n Drops", "17155 SE Sunnyside Rd #152, Happy Valley", "E", "8:00 AM", "http://hopsndrops.com", 45.426575, -122.486752, 'ChIJ5xpv23uelVQRwOaFnfzXmfI'),
   new brunchtracker("Hops n Drops", "16826 SW Edy Rd #137, Sherwood", "W", "8:00 AM", "http://hopsndrops.com", 45.367621, -122.850165, 'ChIJjxTkHaNtlVQRvCIaYIwdA10'),
-  new brunchtracker("Hour Glass Pub & Eatery", "7401 NE Glisan St", "NE", "7:00 AM", "http://www.yelp.com/biz/hour-glass-pub-and-eatery-portland", 45.526587, -122.586551, 'ChIJOyPr6BqhlVQR2Z1eheVo86I'),
+  new brunchtracker("Hour Glass Pub & Eatery", "7401 NE Glisan St", "NE", "10:00 AM", "http://www.yelp.com/biz/hour-glass-pub-and-eatery-portland", 45.526587, -122.586551, 'ChIJOyPr6BqhlVQR2Z1eheVo86I'),
   new brunchtracker("Howell's Restaurant & Lounge", "508 7th St, Oregon City", "S", "7:00 AM", "http://www.yelp.com/biz/howells-restaurant-and-lounge-oregon-city", 45.356429, -122.605699, 'ChIJbfYYfjRxlVQRjczK9AOhbiE'),
   new brunchtracker("Hudson's Bar and Grill", "7805 NE Greenwood Dr, Vancouver", "V", "8:00 AM", "http://hudsonsbarandgrill.com", 45.65343, -122.592912, 'ChIJp2j1V5GvlVQR2cHDXRYBghA'),
   new brunchtracker("HunnyMilk", "1981 W Burnside St", "NW", "8:00 AM", "http://www.hunnymilk.com", 45.523330, -122.691970, 'ChIJg3YpqmgJlVQRTysJwA2TLzI'),
